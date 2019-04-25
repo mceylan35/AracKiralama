@@ -1,0 +1,14 @@
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Interfaces\bin\Debug\AracKiralama.Interfaces.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Interfaces\bin\Debug\AracKiralama.Interfaces.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Interfaces\bin\Debug\AracKiralama.Entities.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Interfaces\bin\Debug\AracKiralama.Entities.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Interfaces\bin\Debug\AracKiralama.Entities.dll.config
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Interfaces\obj\Debug\AracKiralama.Interfaces.csprojAssemblyReference.cache
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Interfaces\obj\Debug\AracKiralama.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Interfaces\obj\Debug\AracKiralama.Interfaces.csproj.CopyComplete
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Interfaces\obj\Debug\AracKiralama.Interfaces.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Interfaces\obj\Debug\AracKiralama.Interfaces.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Interfaces\bin\Debug\System.ServiceModel.Http.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Interfaces\bin\Debug\System.ServiceModel.Primitives.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Interfaces\bin\Debug\AracKiralama.DTO.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Interfaces\bin\Debug\AracKiralama.DTO.pdb

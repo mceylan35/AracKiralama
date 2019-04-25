@@ -104,6 +104,7 @@ namespace AracKiralama.SOAP
                 Iade = entity.Iade,
                 AlinanUcret = entity.AlinanUcret
             });
+            //nice
         }
     }
 }

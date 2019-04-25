@@ -1,0 +1,17 @@
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.Dal.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.Dal.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.csprojAssemblyReference.cache
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.csproj.CoreCompileInputs.cache
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.Dal.dll.config
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.Entities.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\bin\Debug\EntityFramework.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.Entities.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.Entities.dll.config
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\bin\Debug\EntityFramework.xml
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.csproj.CopyComplete
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.DTO.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.DTO.pdb
