@@ -18,7 +18,7 @@ namespace AracKiralama.Bll
        {
            sirketRepository = _sirketRepository;
        }
-
+        ///deneme asdasda sad
        
 
        
