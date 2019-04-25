@@ -18,5 +18,7 @@ namespace AracKiralama.Bll
         {
             rezervasyonRepository = _rezervasyonRepository;
         }
+         
+
     }
 }
