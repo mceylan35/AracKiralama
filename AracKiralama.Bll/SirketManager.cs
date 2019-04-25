@@ -26,6 +26,8 @@ namespace AracKiralama.Bll
             return 1;
         }
 
+       //felaket
+
        
     }
 }
