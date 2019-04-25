@@ -22,6 +22,7 @@ namespace AracKiralama.Bll
        {
            return 1;
        }
+
         ///deneme asdasda sad
        
 
