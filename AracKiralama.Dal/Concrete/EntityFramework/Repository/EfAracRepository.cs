@@ -11,6 +11,9 @@ namespace AracKiralama.Dal.Concrete.EntityFramework.Repository
 {
     public class EfAracRepository:EfGenericRepository<Arac>,IAracRepository
     {
-
+          public EfAracRepository()
+        {
+            context = new AracKiralamaContext();
+        }
     }
 }
