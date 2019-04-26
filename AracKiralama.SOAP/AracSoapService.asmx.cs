@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -36,7 +36,12 @@ namespace AracKiralama.SOAP
                 EhliyetYasi = entity.EhliyetYasi,
                 KendiAnlikKM = entity.KendiAnlikKM,
                 KoltukSayisi = entity.KoltukSayisi,
-                MinYasSiniri = entity.MinYasSiniri
+                MinYasSiniri = entity.MinYasSiniri,
+                SirketID = entity.SirketID,
+                Resim = entity.Resim,
+                Rezerve = entity.Rezerve,
+                Model = entity.Model
+
             });
         }
         [WebMethod]
@@ -62,7 +67,11 @@ namespace AracKiralama.SOAP
                 EhliyetYasi = entity.EhliyetYasi,
                 KendiAnlikKM = entity.KendiAnlikKM,
                 KoltukSayisi = entity.KoltukSayisi,
-                MinYasSiniri = entity.MinYasSiniri
+                MinYasSiniri = entity.MinYasSiniri,
+                SirketID = entity.SirketID,
+                Resim = entity.Resim,
+                Rezerve = entity.Rezerve,
+                Model = entity.Model
             };
         }
         [WebMethod]
@@ -79,7 +88,14 @@ namespace AracKiralama.SOAP
                 EhliyetYasi = entity.EhliyetYasi,
                 KendiAnlikKM = entity.KendiAnlikKM,
                 KoltukSayisi = entity.KoltukSayisi,
-                MinYasSiniri = entity.MinYasSiniri
+                MinYasSiniri = entity.MinYasSiniri,
+                SirketID = entity.SirketID,
+                Resim = entity.Resim,
+                Rezerve = entity.Rezerve,
+                Model = entity.Model
+                
+                
+                
 
             }).ToList();
         }
@@ -97,7 +113,11 @@ namespace AracKiralama.SOAP
                 EhliyetYasi = entity.EhliyetYasi,
                 KendiAnlikKM = entity.KendiAnlikKM,
                 KoltukSayisi = entity.KoltukSayisi,
-                MinYasSiniri = entity.MinYasSiniri
+                MinYasSiniri = entity.MinYasSiniri,
+                SirketID = entity.SirketID,
+                Resim = entity.Resim,
+                Rezerve = entity.Rezerve,
+                Model = entity.Model
             });
         }
     }
