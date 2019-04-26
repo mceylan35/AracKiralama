@@ -10,5 +10,9 @@ namespace AracKiralama.Dal.Concrete.EntityFramework.Repository
 {
     public class EfRezervasyonRepository:EfGenericRepository<Rezervasyon>,IRezervasyonRepository
     {
+         public EfRezervasyonRepository()
+        {
+            context = new AracKiralamaContext();
+        }
     }
 }
