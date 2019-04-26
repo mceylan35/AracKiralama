@@ -22,9 +22,9 @@ namespace AracKiralama.Entities
 
         public string Model { get; set; }
 
-        public string EhliyetYasi { get; set; }
+        public int? EhliyetYasi { get; set; }
 
-        public byte? MinYasSiniri { get; set; }
+        public int? MinYasSiniri { get; set; }
 
         public int? GunlukSinirKM { get; set; }
 
@@ -34,7 +34,7 @@ namespace AracKiralama.Entities
 
         public int? BagajHacmi { get; set; }
 
-        public byte? KoltukSayisi { get; set; }
+        public int? KoltukSayisi { get; set; }
 
         [Column(TypeName = "money")]
         public decimal? GunlukKiralikFiyat { get; set; }
