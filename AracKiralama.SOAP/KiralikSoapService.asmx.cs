@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -29,7 +29,7 @@ namespace AracKiralama.SOAP
         {
             int gunsayisi = GunSayisiHesapla((DateTime)entity.Alis_Tarihi,(DateTime)entity.Veris_Tarihi);
             var arac = aracManager.Get((int) entity.AracID);
-            decimal fiyat = gunsayisi * (decimal)arac.GunlukKiralikFiyat;
+            decimal fiyat = KiraFiyatHesapla(gunsayisi,(decimal)arac.GunlukKiralikFiyat);
         
             kiralikManager.Add(new Kiralik
             {
@@ -41,12 +41,21 @@ namespace AracKiralama.SOAP
                 Veris_Tarihi = entity.Veris_Tarihi,
                 Iade = entity.Iade,
                 AlinanUcret = fiyat
+                
+             
+
 
 
             });
             //araca durum ekle
             //Aracın durumunu değiştir aramada gözükmesin vs
         }
+
+        private decimal KiraFiyatHesapla(int gunsayisi,decimal gunlukKiralikFiyat)
+        {
+          return  gunsayisi * gunlukKiralikFiyat;
+        }
+
         private int GunSayisiHesapla(DateTime alisTarihi, DateTime verisTarihi)
         {
             return Convert.ToInt32((verisTarihi - alisTarihi).TotalDays) + 1;
