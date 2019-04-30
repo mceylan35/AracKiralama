@@ -27,17 +27,8 @@ namespace AracKiralama.SoapServis
         [WebMethod]
         public void Add(KullaniciDTO entity)
         {
-            kullaniciService.Add(new Kullanici
-            {
-                KullaniciId = entity.KullaniciId,
-                Ad = entity.Ad,
-                Soyad = entity.Soyad,
-                DogumTarihi = entity.DogumTarihi,
-                EhliyetAlimTarihi = entity.EhliyetAlimTarihi,
-                RoleID = entity.RoleID,
-                Email = entity.Email,
-                Sifre = entity.Sifre
-            });
+            var kullanici = Mapper.Map<Kullanici>(entity);
+            kullaniciService.Add(kullanici);
 
 
         }
@@ -71,17 +62,7 @@ namespace AracKiralama.SoapServis
         public KullaniciDTO KullaniciGiris(string eposta, string sifre)
         {
             var entity = kullaniciService.KullaniciGiris(eposta, sifre);
-            return new KullaniciDTO
-            {
-                KullaniciId = entity.KullaniciId,
-                Ad = entity.Ad,
-                Soyad = entity.Soyad,
-                DogumTarihi = entity.DogumTarihi,
-                EhliyetAlimTarihi = entity.EhliyetAlimTarihi,
-                RoleID = entity.RoleID,
-                Email = entity.Email,
-                Sifre = entity.Sifre
-            };
+            return Mapper.Map<KullaniciDTO>(entity);
         }
 
 
@@ -91,21 +72,9 @@ namespace AracKiralama.SoapServis
         [WebMethod]
         public void Update(KullaniciDTO entity)
         {
-            // var k = kullaniciService.Get(entity.KullaniciId);
-            kullaniciService.Update(new Kullanici
-            {
-                KullaniciId = entity.KullaniciId,
-                Ad = entity.Ad,
-                Soyad = entity.Soyad,
-                DogumTarihi = entity.DogumTarihi,
-                EhliyetAlimTarihi = entity.EhliyetAlimTarihi,
-                RoleID = entity.RoleID,
-                Email = entity.Email,
-                Sifre = entity.Sifre
-
-
-
-            });
+         
+            var kullanici = Mapper.Map<Kullanici>(entity);
+            kullaniciService.Update(kullanici);
         }
     }
 }

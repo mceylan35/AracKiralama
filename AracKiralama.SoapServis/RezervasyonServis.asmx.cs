@@ -63,14 +63,8 @@ namespace AracKiralama.SoapServis
         [WebMethod]
         public void Update(RezervasyonDTO entity)
         {
-            rezervasyonManager.Update(new Rezervasyon
-            {
-                AracId = entity.AracId,
-                KullaniciId = entity.KullaniciId,
-                Rezerved = entity.Rezerved,
-                RezerveId = entity.RezerveId,
-                RezerveTarih = entity.RezerveTarih
-            });
+            var rezervasyon = Mapper.Map<Rezervasyon>(entity);
+            rezervasyonManager.Update(rezervasyon);
         }
     }
 }

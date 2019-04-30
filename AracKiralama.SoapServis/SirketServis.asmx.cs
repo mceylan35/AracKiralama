@@ -26,16 +26,8 @@ namespace AracKiralama.SoapServis
         [WebMethod]
         public SirketDTO Add(SirketDTO entity)
         {
-            sirketService.Add(new Sirket
-            {
-                SirketAdi = entity.SirketAdi,
-                Adres = entity.Adres,
-                AracSayisi = entity.AracSayisi,
-                Sehir = entity.Sehir,
-                SirketPuani = entity.SirketPuani,
-                SirketId = entity.SirketId
-
-            });
+            var sirket = Mapper.Map<Sirket>(entity);
+            sirketService.Add(sirket);
             return entity;
 
         }
@@ -43,30 +35,11 @@ namespace AracKiralama.SoapServis
         [WebMethod]
         public bool Delete(int id)
         {
-            var entity = sirketService.Get(id);
-            return sirketService.Delete(new Sirket
-            {
-                SirketAdi = entity.SirketAdi,
-                Adres = entity.Adres,
-                AracSayisi = entity.AracSayisi,
-                Sehir = entity.Sehir,
-                SirketPuani = entity.SirketPuani,
-                SirketId = entity.SirketId
-            });
+
+            return sirketService.Delete(id);
+
         }
-        [WebMethod(MessageName = "EntitySil")]
-        public bool Delete(SirketDTO entity)
-        {
-            return sirketService.Delete(new Sirket
-            {
-                SirketAdi = entity.SirketAdi,
-                Adres = entity.Adres,
-                AracSayisi = entity.AracSayisi,
-                Sehir = entity.Sehir,
-                SirketPuani = entity.SirketPuani,
-                SirketId = entity.SirketId
-            });
-        }
+
         [WebMethod]
         public SirketDTO Get(int id)
         {
@@ -92,15 +65,8 @@ namespace AracKiralama.SoapServis
         public void Update(int id)
         {
             var entity = sirketService.Get(id);
-            sirketService.Update(new Sirket
-            {
-                SirketAdi = entity.SirketAdi,
-                Adres = entity.Adres,
-                AracSayisi = entity.AracSayisi,
-                Sehir = entity.Sehir,
-                SirketPuani = entity.SirketPuani,
-                SirketId = entity.SirketId
-            });
+            var sirket = Mapper.Map<Sirket>(entity);
+            sirketService.Update(sirket);
 
         }
     }

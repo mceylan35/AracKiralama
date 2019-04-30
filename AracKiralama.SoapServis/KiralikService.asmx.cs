@@ -31,32 +31,13 @@ namespace AracKiralama.SoapServis
             int gunsayisi = GunSayisiHesapla((DateTime)entity.Alis_Tarihi, (DateTime)entity.Veris_Tarihi);
             var arac = aracManager.Get((int)entity.AracID);
             decimal fiyat = KiraFiyatHesapla(gunsayisi, (decimal)arac.GunlukKiralikFiyat);
-
+            entity.AlinanUcret = fiyat;
             var kiralik = Mapper.Map<Kiralik>(entity);
-            kiralik.AlinanUcret = fiyat;
+            
             
             kiralikManager.Add(kiralik);
 
-
-
-            //kiralikManager.Add(new Kiralik
-            //{
-            //    KiralikId = entity.KiralikId,
-            //    KullaniciID = entity.KullaniciID,
-            //    AracID = entity.AracID,
-            //    Alis_Tarihi = entity.Alis_Tarihi,
-            //    VerilisKm = entity.VerilisKm,
-            //    Veris_Tarihi = entity.Veris_Tarihi,
-            //    Iade = entity.Iade,
-            //    AlinanUcret = fiyat
-
-
-
-
-
-            //});
-            //araca durum ekle
-            //Aracın durumunu değiştir aramada gözükmesin vs
+            
         }
 
         private decimal KiraFiyatHesapla(int gunsayisi, decimal gunlukKiralikFiyat)
@@ -92,17 +73,10 @@ namespace AracKiralama.SoapServis
         [WebMethod]
         public void Update(KiralikDTO entity)
         {
-            kiralikManager.Update(new Kiralik
-            {
-                KiralikId = entity.KiralikId,
-                KullaniciID = entity.KullaniciID,
-                AracID = entity.AracID,
-                Alis_Tarihi = entity.Alis_Tarihi,
-                VerilisKm = entity.VerilisKm,
-                Veris_Tarihi = entity.Veris_Tarihi,
-                Iade = entity.Iade,
-                AlinanUcret = entity.AlinanUcret
-            });
+
+            var kiralik = Mapper.Map<Kiralik>(entity);
+
+            kiralikManager.Update(kiralik);
             //nice
         }
     }
