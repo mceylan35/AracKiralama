@@ -12,6 +12,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracKiralama.Interfaces", "AracKiralama.Interfaces\AracKiralama.Interfaces.csproj", "{92BB8376-4A9D-45B1-8AF1-72F18BE0C822}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracKiralama.WinFormUI", "AracKiralama.WinFormUI\AracKiralama.WinFormUI.csproj", "{5D6ADA75-9800-4DF0-BA15-CD2B17BC8BEC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{63708024-647D-443C-A6BE-A9578B24F04B} = {63708024-647D-443C-A6BE-A9578B24F04B}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracKiralama.MvcUI", "AracKiralama.MvcUI\AracKiralama.MvcUI.csproj", "{212B5B39-7D2C-46B1-B8B9-A91C1DC48264}"
 	ProjectSection(ProjectDependencies) = postProject

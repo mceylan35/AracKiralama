@@ -48,11 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\AracSoapService\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Connected Services\KullaniciSoapServis\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -78,29 +73,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Connected Services\AracSoapService\AracKiralama.WinFormUI.AracSoapService.AracDTO.datasource">
+    <None Include="Connected Services\KullaniciSoapServis\AracKiralama.WinFormUI.KullaniciSoapServis.AddResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\AracSoapService\AracKiralama.WinFormUI.AracSoapService.AracListeResponse.datasource">
+    <None Include="Connected Services\KullaniciSoapServis\AracKiralama.WinFormUI.KullaniciSoapServis.GetAllResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\AracSoapService\AracKiralama.WinFormUI.AracSoapService.DenemeResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\AracSoapService\AracKiralama.WinFormUI.AracSoapService.HelloWorldResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\AracSoapService\AracSOAPService.wsdl" />
-    <None Include="Connected Services\KullaniciSoapServis\AracKiralama.WinFormUI.KullaniciSoapServis.HelloWorldResponse.datasource">
+    <None Include="Connected Services\KullaniciSoapServis\AracKiralama.WinFormUI.KullaniciSoapServis.GetResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\KullaniciSoapServis\AracKiralama.WinFormUI.KullaniciSoapServis.KullaniciDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\KullaniciSoapServis\AracKiralama.WinFormUI.KullaniciSoapServis.KullaniciListeleResponse.datasource">
+    <None Include="Connected Services\KullaniciSoapServis\AracKiralama.WinFormUI.KullaniciSoapServis.KullaniciGirisResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\KullaniciSoapServis\KullaniciSoapService.wsdl" />
+    <None Include="Connected Services\KullaniciSoapServis\AracKiralama.WinFormUI.KullaniciSoapServis.UpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSoapServis\KullaniciServis.wsdl" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -118,20 +109,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\AracSoapService\" />
     <WCFMetadataStorage Include="Connected Services\KullaniciSoapServis\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\AracSoapService\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\AracSoapService\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\AracSoapService\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\KullaniciSoapServis\configuration91.svcinfo" />

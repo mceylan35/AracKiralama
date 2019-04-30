@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d9af4b5d-8115-456a-9029-fbe8b90d7360" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2f543354-bb74-49df-8f4b-6290012e8850" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,10 +19,10 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:59008/KullaniciSoapService.asmx?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:54501/KullaniciServis.asmx?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="KullaniciSoapService.wsdl" MetadataType="Wsdl" ID="735c8ee3-dcfa-4a29-bbf9-462447bdd709" SourceId="1" SourceUrl="http://localhost:59008/KullaniciSoapService.asmx?wsdl" />
+    <MetadataFile FileName="KullaniciServis.wsdl" MetadataType="Wsdl" ID="e751e4c4-019f-4142-89fa-1c742a7fc524" SourceId="1" SourceUrl="http://localhost:54501/KullaniciServis.asmx?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
