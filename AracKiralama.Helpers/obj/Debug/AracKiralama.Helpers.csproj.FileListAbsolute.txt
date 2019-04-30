@@ -1,0 +1,15 @@
+C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Helpers\bin\Debug\AracKiralama.Helpers.dll
+C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Helpers\bin\Debug\AracKiralama.Helpers.pdb
+C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Helpers\bin\Debug\AracKiralama.DTO.dll
+C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Helpers\bin\Debug\AracKiralama.Entities.dll
+C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Helpers\bin\Debug\AutoMapper.dll
+C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Helpers\bin\Debug\AracKiralama.DTO.pdb
+C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Helpers\bin\Debug\AracKiralama.Entities.pdb
+C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Helpers\bin\Debug\AracKiralama.Entities.dll.config
+C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Helpers\bin\Debug\AutoMapper.pdb
+C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Helpers\bin\Debug\AutoMapper.xml
+C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.csprojAssemblyReference.cache
+C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.csproj.CopyComplete
+C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.dll
+C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.pdb

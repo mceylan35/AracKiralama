@@ -58,11 +58,7 @@ namespace AracKiralama.Dal.Concrete.EntityFramework.Repository
             return entity;
         }
 
-        public IQueryable<T> GetAll(System.Linq.Expressions.Expression<Func<T, bool>> predicate)
-        {
-            return context.Set<T>().Where(predicate).AsQueryable();
-            //eturn context.Set<T>().AsNoTracking.tolist();
-        }
+     
 
         public List<T> GetAll()
         {

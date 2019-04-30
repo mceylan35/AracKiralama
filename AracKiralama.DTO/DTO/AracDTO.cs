@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -29,7 +29,7 @@ namespace AracKiralama.DTO.DTO
 
         public int? KoltukSayisi { get; set; }
 
-       // [Column(TypeName = "money")]
+        [Column(TypeName = "money")]
         public decimal? GunlukKiralikFiyat { get; set; }
 
         public int? SirketID { get; set; }

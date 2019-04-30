@@ -25,5 +25,9 @@ namespace AracKiralama.DTO.DTO
         public decimal? AlinanUcret { get; set; }
 
         public bool? Iade { get; set; }
+
+        
+
+        
     }
 }

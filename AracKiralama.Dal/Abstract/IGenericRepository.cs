@@ -12,7 +12,7 @@ namespace AracKiralama.Dal.Abstract
         T Add(T entity);
         T Update(T entity);
         T Get(int id);
-      //  IQueryable<T> GetAll(Expression<Func<T, bool>> predicate);
+     
         List<T> GetAll();
         bool Delete(int id);
         bool Delete(T entity);

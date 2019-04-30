@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AracKiralama.Dal.Abstract;
+using AracKiralama.Dal.Concrete.EntityFramework.Context;
 using AracKiralama.Entities;
 
 namespace AracKiralama.Dal.Concrete.EntityFramework.Repository
 {
     public class EfKiralikRepository:EfGenericRepository<Kiralik>,IKiralikRepository
     {
-         public EfKiralikRepository()
+        public EfKiralikRepository()
         {
             context = new AracKiralamaContext();
         }

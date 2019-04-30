@@ -17,9 +17,6 @@ namespace AracKiralama.Dal.Concrete.EntityFramework.Repository
             context = new AracKiralamaContext();
         }
 
-       public List<SirketDTO> SirketListele()
-       {
-           return null;
-       }
+       
     }
 }

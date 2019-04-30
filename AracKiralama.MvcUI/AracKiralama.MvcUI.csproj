@@ -99,21 +99,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Connected Services\KullaniciSoapService\AracKiralama.MvcUI.KullaniciSoapService.HelloWorldResponse.datasource">
+    <Content Include="Connected Services\KiralikServiceSoap\AracKiralama.MvcUI.KiralikServiceSoap.AddResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\KullaniciSoapService\AracKiralama.MvcUI.KullaniciSoapService.KullaniciDTO.datasource">
+    <Content Include="Connected Services\KiralikServiceSoap\AracKiralama.MvcUI.KiralikServiceSoap.GetAllResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\KullaniciSoapService\AracKiralama.MvcUI.KullaniciSoapService.KullaniciListeleResponse.datasource">
+    <Content Include="Connected Services\KiralikServiceSoap\AracKiralama.MvcUI.KiralikServiceSoap.GetResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <None Include="Connected Services\KullaniciSoapService\configuration91.svcinfo" />
-    <None Include="Connected Services\KullaniciSoapService\configuration.svcinfo" />
-    <None Include="Connected Services\KullaniciSoapService\Reference.svcmap">
+    <Content Include="Connected Services\KiralikServiceSoap\AracKiralama.MvcUI.KiralikServiceSoap.KiralikDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\KiralikServiceSoap\AracKiralama.MvcUI.KiralikServiceSoap.UpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\KiralikServiceSoap\configuration91.svcinfo" />
+    <None Include="Connected Services\KiralikServiceSoap\configuration.svcinfo" />
+    <None Include="Connected Services\KiralikServiceSoap\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\KiralikServiceSoap\KiralikService.wsdl" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -122,7 +129,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <None Include="Connected Services\KullaniciSoapService\KullaniciSoapService.wsdl" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -139,11 +145,12 @@
   <ItemGroup>
     <Compile Include="App_Start\NinjectControllerFactory.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Connected Services\KullaniciSoapService\Reference.cs">
+    <Compile Include="Connected Services\KiralikServiceSoap\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\AracsController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\KullaniciController.cs" />
     <Compile Include="Global.asax.cs">
@@ -159,6 +166,11 @@
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Kullanici\Index.cshtml" />
+    <Content Include="Views\Aracs\Create.cshtml" />
+    <Content Include="Views\Aracs\Delete.cshtml" />
+    <Content Include="Views\Aracs\Details.cshtml" />
+    <Content Include="Views\Aracs\Edit.cshtml" />
+    <Content Include="Views\Aracs\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -196,7 +208,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\KullaniciSoapService\" />
+    <WCFMetadataStorage Include="Connected Services\KiralikServiceSoap\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -211,9 +223,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51010</DevelopmentServerPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:59800/</IISUrl>
+          <IISUrl>http://localhost:54946/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

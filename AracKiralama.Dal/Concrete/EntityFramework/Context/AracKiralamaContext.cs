@@ -8,9 +8,11 @@ namespace AracKiralama.Dal.Concrete.EntityFramework.Context
 
     public partial class AracKiralamaContext : DbContext
     {
+
         public AracKiralamaContext()
             : base("name=AracKiralamaContext")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
 
         public virtual DbSet<Arac> Arac { get; set; }
@@ -36,5 +38,6 @@ namespace AracKiralama.Dal.Concrete.EntityFramework.Context
                 .WithOptional(e => e.Kullanici)
                 .HasForeignKey(e => e.AracId);
         }
+
     }
 }
