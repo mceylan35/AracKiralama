@@ -91,8 +91,8 @@ namespace AracKiralama.WebUI.Controllers
         {
             if (ModelState.IsValid)
             {
-                aracServis.Update()
-                db.SaveChanges();
+                //aracServis.Update()
+                //db.SaveChanges();
                 return RedirectToAction("Index");
             }
             ViewBag.SirketID = new SelectList(db.Sirket, "SirketId", "SirketAdi", arac.SirketID);
