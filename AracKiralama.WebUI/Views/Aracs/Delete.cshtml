@@ -1,0 +1,128 @@
+﻿@model AracKiralama.Entities.Arac
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Arac</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Sirket.SirketAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sirket.SirketAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EhliyetYasi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EhliyetYasi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinYasSiniri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinYasSiniri)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GunlukSinirKM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GunlukSinirKM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KendiAnlikKM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KendiAnlikKM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AirBag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AirBag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BagajHacmi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BagajHacmi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KoltukSayisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KoltukSayisi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GunlukKiralikFiyat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GunlukKiralikFiyat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rezerve)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rezerve)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Resim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Resim)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

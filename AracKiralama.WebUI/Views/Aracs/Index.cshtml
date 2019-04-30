@@ -1,0 +1,106 @@
+﻿@model List<AracKiralama.Entities.Arac>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+
+           
+        </th>
+        <th>
+            AracAdi
+        </th>
+        <th>
+       Model
+        </th>
+        <th>
+           Ehliyet Yaşı
+        </th>
+        <th>
+           Min Yaş SInırı
+        </th>
+        <th>
+         Günlük Km sınırı
+        </th>
+        <th>
+           Kendi Anlık sınırı
+        </th>
+        <th>
+          Airbag
+        </th>
+        <th>
+           Bagaj hacmi
+        </th>
+        <th>
+           Koltuk sayısı
+        </th>
+        <th>
+           Günlük Kiralık Fiyat
+        </th>
+        <th>
+           Rezerve
+        </th>
+        <th>
+           Resim
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sirket.SirketAdi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AracAdi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Model)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EhliyetYasi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MinYasSiniri)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GunlukSinirKM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KendiAnlikKM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AirBag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BagajHacmi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KoltukSayisi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GunlukKiralikFiyat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rezerve)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Resim)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AracId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AracId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AracId })
+        </td>
+    </tr>
+}
+
+</table>

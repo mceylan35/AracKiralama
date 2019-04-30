@@ -16,16 +16,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracKiralama.WinFormUI", "A
 		{63708024-647D-443C-A6BE-A9578B24F04B} = {63708024-647D-443C-A6BE-A9578B24F04B}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracKiralama.MvcUI", "AracKiralama.MvcUI\AracKiralama.MvcUI.csproj", "{212B5B39-7D2C-46B1-B8B9-A91C1DC48264}"
-	ProjectSection(ProjectDependencies) = postProject
-		{63708024-647D-443C-A6BE-A9578B24F04B} = {63708024-647D-443C-A6BE-A9578B24F04B}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracKiralama.DTO", "AracKiralama.DTO\AracKiralama.DTO.csproj", "{D8C63E8F-593D-44B3-91E5-A085DFA434D3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracKiralama.SoapServis", "AracKiralama.SoapServis\AracKiralama.SoapServis.csproj", "{63708024-647D-443C-A6BE-A9578B24F04B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracKiralama.Helpers", "AracKiralama.Helpers\AracKiralama.Helpers.csproj", "{040E6516-9B1E-4D77-B14F-FDC472EDBBA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracKiralama.WebUI", "AracKiralama.WebUI\AracKiralama.WebUI.csproj", "{6A9523CE-1011-42E4-8D13-7F7ABCDA1EC2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{63708024-647D-443C-A6BE-A9578B24F04B} = {63708024-647D-443C-A6BE-A9578B24F04B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +53,6 @@ Global
 		{5D6ADA75-9800-4DF0-BA15-CD2B17BC8BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D6ADA75-9800-4DF0-BA15-CD2B17BC8BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D6ADA75-9800-4DF0-BA15-CD2B17BC8BEC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{212B5B39-7D2C-46B1-B8B9-A91C1DC48264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{212B5B39-7D2C-46B1-B8B9-A91C1DC48264}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{212B5B39-7D2C-46B1-B8B9-A91C1DC48264}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{212B5B39-7D2C-46B1-B8B9-A91C1DC48264}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D8C63E8F-593D-44B3-91E5-A085DFA434D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D8C63E8F-593D-44B3-91E5-A085DFA434D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8C63E8F-593D-44B3-91E5-A085DFA434D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -69,6 +65,10 @@ Global
 		{040E6516-9B1E-4D77-B14F-FDC472EDBBA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{040E6516-9B1E-4D77-B14F-FDC472EDBBA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{040E6516-9B1E-4D77-B14F-FDC472EDBBA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A9523CE-1011-42E4-8D13-7F7ABCDA1EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A9523CE-1011-42E4-8D13-7F7ABCDA1EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A9523CE-1011-42E4-8D13-7F7ABCDA1EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A9523CE-1011-42E4-8D13-7F7ABCDA1EC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

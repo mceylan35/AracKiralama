@@ -1,0 +1,122 @@
+﻿@model AracKiralama.Entities.Arac
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Arac</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Sirket.SirketAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sirket.SirketAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EhliyetYasi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EhliyetYasi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinYasSiniri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinYasSiniri)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GunlukSinirKM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GunlukSinirKM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KendiAnlikKM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KendiAnlikKM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AirBag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AirBag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BagajHacmi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BagajHacmi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KoltukSayisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KoltukSayisi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GunlukKiralikFiyat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GunlukKiralikFiyat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rezerve)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rezerve)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Resim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Resim)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AracId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
