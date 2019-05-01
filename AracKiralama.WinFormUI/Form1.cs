@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AracKiralama.WinFormUI.AracServis;
 using AracKiralama.WinFormUI.KullaniciSoapServis;
+using AutoMapper;
 
 namespace AracKiralama.WinFormUI
 {
@@ -20,8 +22,10 @@ namespace AracKiralama.WinFormUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-          KullaniciServisSoapClient sp=new KullaniciServisSoapClient();
-            dataGridView1.DataSource = sp.GetAll();
+         // KullaniciServisSoapClient sp=new KullaniciServisSoapClient();
+            AracServisSoapClient aracServis=new AracServisSoapClient();
+        
+            dataGridView1.DataSource = aracServis.GetAll();
 
 
 

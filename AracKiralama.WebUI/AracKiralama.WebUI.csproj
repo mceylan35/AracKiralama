@@ -142,16 +142,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\KiralikServis\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\SirketServis\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AracsController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KiraliksController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AracModel.cs" />
+    <Compile Include="Models\AracSirketKiraViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +183,27 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Connected Services\KiralikServis\AracKiralama.WebUI.KiralikServis.AddResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\KiralikServis\AracKiralama.WebUI.KiralikServis.GetAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\KiralikServis\AracKiralama.WebUI.KiralikServis.GetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\KiralikServis\AracKiralama.WebUI.KiralikServis.KiralikDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\KiralikServis\AracKiralama.WebUI.KiralikServis.UpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\KiralikServis\configuration91.svcinfo" />
+    <None Include="Connected Services\KiralikServis\configuration.svcinfo" />
+    <None Include="Connected Services\KiralikServis\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Connected Services\SirketServis\AracKiralama.WebUI.SirketServis.AddResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -188,6 +216,7 @@
     <Content Include="Connected Services\SirketServis\AracKiralama.WebUI.SirketServis.SirketDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Connected Services\KiralikServis\KiralikService.wsdl" />
     <None Include="Connected Services\SirketServis\configuration91.svcinfo" />
     <None Include="Connected Services\SirketServis\configuration.svcinfo" />
     <None Include="Connected Services\SirketServis\Reference.svcmap">
@@ -224,22 +253,12 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Aracs\Create.cshtml" />
-    <Content Include="Views\Aracs\Delete.cshtml" />
-    <Content Include="Views\Aracs\Details.cshtml" />
-    <Content Include="Views\Aracs\Edit.cshtml" />
     <Content Include="Views\Aracs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -255,6 +274,14 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AracKiralama.Bll\AracKiralama.Bll.csproj">
+      <Project>{61f437be-ec03-4fb0-a25b-62e0844151cc}</Project>
+      <Name>AracKiralama.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AracKiralama.Dal\AracKiralama.Dal.csproj">
+      <Project>{00c594e7-c9ba-4d05-b7df-06bf33f59609}</Project>
+      <Name>AracKiralama.Dal</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AracKiralama.DTO\AracKiralama.DTO.csproj">
       <Project>{d8c63e8f-593d-44b3-91e5-a085dfa434d3}</Project>
       <Name>AracKiralama.DTO</Name>
@@ -273,6 +300,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\AracServis\" />
+    <WCFMetadataStorage Include="Connected Services\KiralikServis\" />
     <WCFMetadataStorage Include="Connected Services\SirketServis\" />
   </ItemGroup>
   <PropertyGroup>

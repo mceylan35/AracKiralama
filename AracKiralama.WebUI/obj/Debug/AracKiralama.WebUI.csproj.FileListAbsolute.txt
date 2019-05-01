@@ -92,3 +92,10 @@ C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\obj\Debug\AracKiral
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\obj\Debug\AracKiralama.WebUI.csproj.CopyComplete
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\obj\Debug\AracKiralama.WebUI.dll
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\obj\Debug\AracKiralama.WebUI.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Bll.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Dal.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Interfaces.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Bll.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Dal.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Dal.dll.config
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Interfaces.pdb

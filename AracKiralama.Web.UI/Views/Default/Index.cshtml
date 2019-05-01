@@ -1,0 +1,11 @@
+﻿@model List<AracKiralama.Web.UI.Models.AracModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+@foreach (var aracModel in Model)
+{
+    @aracModel.AracAdi
+}
+<h2>Index</h2>
+

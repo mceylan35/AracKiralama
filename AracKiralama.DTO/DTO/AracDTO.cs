@@ -39,7 +39,7 @@ namespace AracKiralama.DTO.DTO
 
         public string Resim { get; set; }
 
-        //Sirket
+       
         // public string SirketAdi { get; set; }
 
 

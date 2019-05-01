@@ -18,3 +18,9 @@ C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.WinFormUI\obj\Debug\Arac
 C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.csproj.CoreCompileInputs.cache
 C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.exe
 C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\bin\Debug\AracKiralama.Helpers.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\bin\Debug\AutoMapper.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\bin\Debug\AracKiralama.Helpers.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\bin\Debug\AutoMapper.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\bin\Debug\AutoMapper.xml
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.csproj.CopyComplete
