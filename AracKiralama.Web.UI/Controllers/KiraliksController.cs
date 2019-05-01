@@ -8,125 +8,121 @@ using System.Web;
 using System.Web.Mvc;
 using AracKiralama.Dal.Concrete.EntityFramework.Context;
 using AracKiralama.Entities;
-using AracKiralama.Web.UI.KullaniciServis;
+using AracKiralama.Web.UI.AracServis;
+using AracKiralama.Web.UI.KiralikServis;
 using AracKiralama.Web.UI.Models;
 using AutoMapper;
 
 namespace AracKiralama.Web.UI.Controllers
 {
-    public class KullanicisController : Controller
+    public class KiraliksController : Controller
     {
         private AracKiralamaContext db = new AracKiralamaContext();
-
-        KullaniciServisSoapClient  kullaniciServis = new KullaniciServisSoapClient();
-
-        // GET: Kullanicis
+        KiralikServiceSoapClient kiralikService=new KiralikServiceSoapClient();
+        // GET: Kiraliks
         public ActionResult Index()
         {
-            var kullanicilar = Mapper.Map<List<KullaniciModel>>(kullaniciServis.GetAll());
-            return View(kullanicilar);
+           // var kiralik = db.Kiralik.Include(k => k.Arac).Include(k => k.Musteri);
+            
+            return View(Mapper.Map<List<KiralikModel>>(kiralikService.GetAll()));
         }
-        
-        // GET: Kullanicis/Details/5e
+
+        // GET: Kiraliks/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            KullaniciModel kullanici =Mapper.Map<KullaniciModel>(kullaniciServis.Get((int)id));
-            if (kullanici == null)
+            var kiralik = Mapper.Map<KiralikModel>(kiralikService.Get((int)id));
+            if (kiralik == null)
             {
                 return HttpNotFound();
             }
-            return View(kullanici);
+            return View(kiralik);
         }
 
-        // GET: Kullanicis/Create
+        // GET: Kiraliks/Create
         public ActionResult Create()
         {
-            ViewBag.RoleId = new SelectList(db.Role, "RoleId", "Role1");
-            ViewBag.SirketId = new SelectList(db.Sirket, "SirketId", "SirketAdi");
+           // ViewBag.AracId = new SelectList(db.Arac, "AracId", "AracAdi");
+           // ViewBag.MusteriId = new SelectList(db.Musteri, "MusteriId", "Adi");
             return View();
         }
 
-        // POST: Kullanicis/Create
+        // POST: Kiraliks/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "KullaniciId,Ad,Soyad,Email,EhliyetAlimTarihi,Sifre,DogumTarihi,RoleId,SirketId")] Kullanici kullanici)
+        public ActionResult Create([Bind(Include = "KiralikId,AracId,Alis_Tarihi,Veris_Tarihi,VerilisKm,AlinanUcret,Iade,Durum,MusteriId")] KiralikModel kiralik)
         {
             if (ModelState.IsValid)
             {
-                db.Kullanici.Add(kullanici);
-                db.SaveChanges();
+                kiralikService.Add(Mapper.Map<KiralikDTO>(kiralik));
                 return RedirectToAction("Index");
             }
 
-            ViewBag.RoleId = new SelectList(db.Role, "RoleId", "Role1", kullanici.RoleId);
-            ViewBag.SirketId = new SelectList(db.Sirket, "SirketId", "SirketAdi", kullanici.SirketId);
-            return View(kullanici);
+           // ViewBag.AracId = new SelectList(db.Arac, "AracId", "AracAdi", kiralik.AracId);
+           // ViewBag.MusteriId = new SelectList(db.Musteri, "MusteriId", "Adi", kiralik.MusteriId);
+            return View(kiralik);
         }
 
-        // GET: Kullanicis/Edit/5
+        // GET: Kiraliks/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Kullanici kullanici = db.Kullanici.Find(id);
-            if (kullanici == null)
+            var kiralik = Mapper.Map<KiralikModel>(kiralikService.Get((int)id));
+            if (kiralik == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.RoleId = new SelectList(db.Role, "RoleId", "Role1", kullanici.RoleId);
-            ViewBag.SirketId = new SelectList(db.Sirket, "SirketId", "SirketAdi", kullanici.SirketId);
-            return View(kullanici);
+           // ViewBag.AracId = new SelectList(db.Arac, "AracId", "AracAdi", kiralik.AracId);
+         //   ViewBag.MusteriId = new SelectList(db.Musteri, "MusteriId", "Adi", kiralik.MusteriId);
+            return View(kiralik);
         }
 
-        // POST: Kullanicis/Edit/5
+        // POST: Kiraliks/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "KullaniciId,Ad,Soyad,Email,EhliyetAlimTarihi,Sifre,DogumTarihi,RoleId,SirketId")] Kullanici kullanici)
+        public ActionResult Edit([Bind(Include = "KiralikId,AracId,Alis_Tarihi,Veris_Tarihi,VerilisKm,AlinanUcret,Iade,Durum,MusteriId")] KiralikModel kiralik)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(kullanici).State = EntityState.Modified;
-                db.SaveChanges();
+               kiralikService.Update(Mapper.Map<KiralikDTO>(kiralik));
                 return RedirectToAction("Index");
             }
-            ViewBag.RoleId = new SelectList(db.Role, "RoleId", "Role1", kullanici.RoleId);
-            ViewBag.SirketId = new SelectList(db.Sirket, "SirketId", "SirketAdi", kullanici.SirketId);
-            return View(kullanici);
+          //  ViewBag.AracId = new SelectList(db.Arac, "AracId", "AracAdi", kiralik.AracId);
+          //  ViewBag.MusteriId = new SelectList(db.Musteri, "MusteriId", "Adi", kiralik.MusteriId);
+            return View(kiralik);
         }
 
-        // GET: Kullanicis/Delete/5
+        // GET: Kiraliks/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Kullanici kullanici = db.Kullanici.Find(id);
-            if (kullanici == null)
+            Kiralik kiralik = db.Kiralik.Find(id);
+            if (kiralik == null)
             {
                 return HttpNotFound();
             }
-            return View(kullanici);
+            return View(kiralik);
         }
 
-        // POST: Kullanicis/Delete/5
+        // POST: Kiraliks/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Kullanici kullanici = db.Kullanici.Find(id);
-            db.Kullanici.Remove(kullanici);
-            db.SaveChanges();
+            kiralikService.Delete(id);
             return RedirectToAction("Index");
         }
 

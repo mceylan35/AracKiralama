@@ -1,0 +1,82 @@
+﻿@model AracKiralama.Web.UI.Models.KiralikModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Kiralik</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @*<dt>
+            @Html.DisplayNameFor(model => model.Arac.AracAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Arac.AracAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Musteri.Adi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Musteri.Adi)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Alis_Tarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Alis_Tarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Veris_Tarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Veris_Tarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VerilisKm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VerilisKm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlinanUcret)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlinanUcret)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Iade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Iade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Durum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Durum)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.KiralikId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

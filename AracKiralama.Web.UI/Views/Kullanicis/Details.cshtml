@@ -1,4 +1,4 @@
-﻿@model AracKiralama.Entities.Kullanici
+﻿@model AracKiralama.Web.UI.Models.KullaniciModel
 
 @{
     ViewBag.Title = "Details";
@@ -10,21 +10,7 @@
     <h4>Kullanici</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Role.Role1)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Role.Role1)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Sirket.SirketAdi)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Sirket.SirketAdi)
-        </dd>
+  
 
         <dt>
             @Html.DisplayNameFor(model => model.Ad)
