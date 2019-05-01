@@ -9,9 +9,9 @@ using AracKiralama.Entities;
 
 namespace AracKiralama.Dal.Concrete.EntityFramework.Repository
 {
-    public class EfRezervasyonRepository:EfGenericRepository<Rezervasyon>,IRezervasyonRepository
+    public class EfMusteriRepository : EfGenericRepository<Musteri>, IMusteriRepository
     {
-        public EfRezervasyonRepository()
+        public EfMusteriRepository()
         {
             context = new AracKiralamaContext();
         }

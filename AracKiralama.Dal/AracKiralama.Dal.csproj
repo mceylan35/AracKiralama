@@ -52,7 +52,7 @@
     <Compile Include="Abstract\IGenericRepository.cs" />
     <Compile Include="Abstract\IKiralikRepository.cs" />
     <Compile Include="Abstract\IKullaniciRepository.cs" />
-    <Compile Include="Abstract\IRezervasyonRepository.cs" />
+    <Compile Include="Abstract\IMusteriRepository.cs" />
     <Compile Include="Abstract\ISirketRepository.cs" />
     <Compile Include="Concrete\EntityFramework\Context\AracKiralamaContext.cs" />
     <Compile Include="Concrete\EntityFramework\Repository\EfAracRepository.cs" />

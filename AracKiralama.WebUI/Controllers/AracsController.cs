@@ -6,22 +6,26 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using AracKiralama.Dal.Concrete.EntityFramework.Context;
+using AracKiralama.DTO.DTO;
 using AracKiralama.Entities;
 using AracKiralama.WebUI.AracServis;
+using AracKiralama.WebUI.SirketServis;
 using AutoMapper;
+using AracDTO = AracKiralama.WebUI.AracServis.AracDTO;
 
 namespace AracKiralama.WebUI.Controllers
 {
     public class AracsController : Controller
     {
-        AracKiralamaContext db=new AracKiralamaContext();
+        
         AracServisSoapClient aracServis=new AracServisSoapClient();
-
+        SirketServisSoapClient sirketServis=new SirketServisSoapClient();
         // GET: Aracs
         public ActionResult Index()
         {
-            return View(Mapper.Map<List<Arac>>(aracServis.GetAll()));
+         
+           
+            return View();
         }
 
         // GET: Aracs/Details/5
@@ -45,7 +49,7 @@ namespace AracKiralama.WebUI.Controllers
         // GET: Aracs/Create
         public ActionResult Create()
         {
-            ViewBag.SirketID = new SelectList(db.Sirket, "SirketId", "SirketAdi");
+           // ViewBag.SirketID = new SelectList(db.Sirket, "SirketId", "SirketAdi");
             return View();
         }
 
@@ -62,7 +66,7 @@ namespace AracKiralama.WebUI.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.SirketID = new SelectList(db.Sirket, "SirketId", "SirketAdi", arac.SirketID);
+         
             return View(arac);
         }
 
@@ -78,7 +82,7 @@ namespace AracKiralama.WebUI.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.SirketID = new SelectList(db.Sirket, "SirketId", "SirketAdi", arac.SirketID);
+           
             return View(arac);
         }
 
@@ -95,7 +99,7 @@ namespace AracKiralama.WebUI.Controllers
                 //db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.SirketID = new SelectList(db.Sirket, "SirketId", "SirketAdi", arac.SirketID);
+         //   ViewBag.SirketID = new SelectList(db.Sirket, "SirketId", "SirketAdi", arac.SirketId);
             return View(arac);
         }
 
@@ -106,12 +110,12 @@ namespace AracKiralama.WebUI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Arac arac = db.Arac.Find(id);
-            if (arac == null)
-            {
-                return HttpNotFound();
-            }
-            return View(arac);
+          //  Arac arac = db.Arac.Find(id);
+            //if (arac == null)
+            //{
+            //    return HttpNotFound();
+            //}
+            return View();
         }
 
         // POST: Aracs/Delete/5
@@ -119,9 +123,8 @@ namespace AracKiralama.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Arac arac = db.Arac.Find(id);
-            db.Arac.Remove(arac);
-            db.SaveChanges();
+          //  Arac arac = db.Arac.Find(id);
+          
             return RedirectToAction("Index");
         }
 
@@ -129,7 +132,7 @@ namespace AracKiralama.WebUI.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+              //  db.Dispose();
             }
             base.Dispose(disposing);
         }

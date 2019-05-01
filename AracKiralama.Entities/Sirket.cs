@@ -13,6 +13,7 @@ namespace AracKiralama.Entities
         public Sirket()
         {
             Arac = new HashSet<Arac>();
+            Kullanici = new HashSet<Kullanici>();
         }
 
         public int SirketId { get; set; }
@@ -29,5 +30,8 @@ namespace AracKiralama.Entities
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Arac> Arac { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Kullanici> Kullanici { get; set; }
     }
 }

@@ -48,8 +48,6 @@ C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\roslyn\vbc.rsp
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\roslyn\VBCSCompiler.exe
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\Antlr3.Runtime.dll
-C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Bll.dll
-C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Dal.dll
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.DTO.dll
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Entities.dll
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Helpers.dll
@@ -68,11 +66,7 @@ C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\System.Web.WebP
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\System.Web.WebPages.dll
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\System.Web.WebPages.Razor.dll
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\WebGrease.dll
-C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Interfaces.dll
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AutoMapper.dll
-C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Bll.pdb
-C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Dal.pdb
-C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Dal.dll.config
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.DTO.pdb
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Entities.pdb
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Entities.dll.config
@@ -91,7 +85,6 @@ C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\Antlr3.Runtime.
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AracKiralama.Interfaces.pdb
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AutoMapper.pdb
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\bin\AutoMapper.xml
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WebUI\obj\Debug\AracKiralama.WebUI.csprojAssemblyReference.cache

@@ -18,7 +18,8 @@
           <s:element minOccurs="1" maxOccurs="1" name="EhliyetAlimTarihi" nillable="true" type="s:dateTime" />
           <s:element minOccurs="0" maxOccurs="1" name="Sifre" type="s:string" />
           <s:element minOccurs="1" maxOccurs="1" name="DogumTarihi" nillable="true" type="s:dateTime" />
-          <s:element minOccurs="1" maxOccurs="1" name="RoleID" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="RoleId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SirketId" nillable="true" type="s:int" />
         </s:sequence>
       </s:complexType>
       <s:element name="AddResponse">

@@ -142,10 +142,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\SirketServis\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AracsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\KiraliksController.cs" />
-    <Compile Include="Controllers\RezervasyonsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -173,6 +176,24 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Connected Services\SirketServis\AracKiralama.WebUI.SirketServis.AddResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SirketServis\AracKiralama.WebUI.SirketServis.GetAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SirketServis\AracKiralama.WebUI.SirketServis.GetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SirketServis\AracKiralama.WebUI.SirketServis.SirketDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\SirketServis\configuration91.svcinfo" />
+    <None Include="Connected Services\SirketServis\configuration.svcinfo" />
+    <None Include="Connected Services\SirketServis\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -184,6 +205,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Connected Services\AracServis\AracServis.wsdl" />
+    <None Include="Connected Services\SirketServis\SirketServis.wsdl" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -214,16 +236,6 @@
     <Content Include="Views\Aracs\Details.cshtml" />
     <Content Include="Views\Aracs\Edit.cshtml" />
     <Content Include="Views\Aracs\Index.cshtml" />
-    <Content Include="Views\Kiraliks\Create.cshtml" />
-    <Content Include="Views\Kiraliks\Delete.cshtml" />
-    <Content Include="Views\Kiraliks\Details.cshtml" />
-    <Content Include="Views\Kiraliks\Edit.cshtml" />
-    <Content Include="Views\Kiraliks\Index.cshtml" />
-    <Content Include="Views\Rezervasyons\Create.cshtml" />
-    <Content Include="Views\Rezervasyons\Delete.cshtml" />
-    <Content Include="Views\Rezervasyons\Details.cshtml" />
-    <Content Include="Views\Rezervasyons\Edit.cshtml" />
-    <Content Include="Views\Rezervasyons\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -243,14 +255,6 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AracKiralama.Bll\AracKiralama.Bll.csproj">
-      <Project>{61f437be-ec03-4fb0-a25b-62e0844151cc}</Project>
-      <Name>AracKiralama.Bll</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\AracKiralama.Dal\AracKiralama.Dal.csproj">
-      <Project>{00c594e7-c9ba-4d05-b7df-06bf33f59609}</Project>
-      <Name>AracKiralama.Dal</Name>
-    </ProjectReference>
     <ProjectReference Include="..\AracKiralama.DTO\AracKiralama.DTO.csproj">
       <Project>{d8c63e8f-593d-44b3-91e5-a085dfa434d3}</Project>
       <Name>AracKiralama.DTO</Name>
@@ -269,6 +273,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\AracServis\" />
+    <WCFMetadataStorage Include="Connected Services\SirketServis\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -40,7 +40,9 @@ namespace AracKiralama.WinFormUI.KullaniciSoapServis {
         
         private System.Nullable<System.DateTime> DogumTarihiField;
         
-        private System.Nullable<int> RoleIDField;
+        private System.Nullable<int> RoleIdField;
+        
+        private System.Nullable<int> SirketIdField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -144,14 +146,27 @@ namespace AracKiralama.WinFormUI.KullaniciSoapServis {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=7)]
-        public System.Nullable<int> RoleID {
+        public System.Nullable<int> RoleId {
             get {
-                return this.RoleIDField;
+                return this.RoleIdField;
             }
             set {
-                if ((this.RoleIDField.Equals(value) != true)) {
-                    this.RoleIDField = value;
-                    this.RaisePropertyChanged("RoleID");
+                if ((this.RoleIdField.Equals(value) != true)) {
+                    this.RoleIdField = value;
+                    this.RaisePropertyChanged("RoleId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=8)]
+        public System.Nullable<int> SirketId {
+            get {
+                return this.SirketIdField;
+            }
+            set {
+                if ((this.SirketIdField.Equals(value) != true)) {
+                    this.SirketIdField = value;
+                    this.RaisePropertyChanged("SirketId");
                 }
             }
         }

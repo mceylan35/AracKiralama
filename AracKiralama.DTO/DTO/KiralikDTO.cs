@@ -11,9 +11,7 @@ namespace AracKiralama.DTO.DTO
     {
         public int KiralikId { get; set; }
 
-        public int? AracID { get; set; }
-
-        public int? KullaniciID { get; set; }
+        public int? AracId { get; set; }
 
         public DateTime? Alis_Tarihi { get; set; }
 
@@ -26,8 +24,11 @@ namespace AracKiralama.DTO.DTO
 
         public bool? Iade { get; set; }
 
-        
+        public bool? Durum { get; set; }
 
-        
+        public int? MusteriId { get; set; }
+
+
+
     }
 }

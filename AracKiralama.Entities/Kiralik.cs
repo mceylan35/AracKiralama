@@ -11,9 +11,7 @@ namespace AracKiralama.Entities
     {
         public int KiralikId { get; set; }
 
-        public int? AracID { get; set; }
-
-        public int? KullaniciID { get; set; }
+        public int? AracId { get; set; }
 
         public DateTime? Alis_Tarihi { get; set; }
 
@@ -26,8 +24,12 @@ namespace AracKiralama.Entities
 
         public bool? Iade { get; set; }
 
+        public bool? Durum { get; set; }
+
+        public int? MusteriId { get; set; }
+
         public virtual Arac Arac { get; set; }
 
-        public virtual Kullanici Kullanici { get; set; }
+        public virtual Musteri Musteri { get; set; }
     }
 }

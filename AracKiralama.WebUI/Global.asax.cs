@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using AracKiralama.Helpers.Mapping;
+using AutoMapper;
 
 namespace AracKiralama.WebUI
 {
@@ -12,10 +14,14 @@ namespace AracKiralama.WebUI
     {
         protected void Application_Start()
         {
+           
+            Mapper.Initialize(cfg => cfg.AddProfile<AutomapperProfile>());
+           
             AreaRegistration.RegisterAllAreas();
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+         
+           // FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
+         //   BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
 }

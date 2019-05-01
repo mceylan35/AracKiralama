@@ -7,7 +7,7 @@ using AracKiralama.Entities;
 
 namespace AracKiralama.Interfaces
 {
-    public interface IRezervasyonService:IGenericService<Rezervasyon>
+    public interface IMusteriService:IGenericService<Musteri>
     {
     }
 }

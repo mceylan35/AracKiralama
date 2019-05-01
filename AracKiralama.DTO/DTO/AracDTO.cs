@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AracKiralama.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -32,11 +33,16 @@ namespace AracKiralama.DTO.DTO
         [Column(TypeName = "money")]
         public decimal? GunlukKiralikFiyat { get; set; }
 
-        public int? SirketID { get; set; }
+        public int? SirketId { get; set; }
 
         public bool? Rezerve { get; set; }
 
         public string Resim { get; set; }
-    
+
+        //Sirket
+        // public string SirketAdi { get; set; }
+
+
+
     }
 }

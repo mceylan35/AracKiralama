@@ -46,7 +46,7 @@
     <Compile Include="KiralikManager.cs" />
     <Compile Include="KullaniciManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RezervasyonManager.cs" />
+    <Compile Include="MusteriManager.cs" />
     <Compile Include="SirketManager.cs" />
   </ItemGroup>
   <ItemGroup>

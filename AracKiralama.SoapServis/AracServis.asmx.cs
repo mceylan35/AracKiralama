@@ -40,7 +40,7 @@ namespace AracKiralama.SoapServis
                 aracManager.Add(arac);
                 return true;
             }
-            catch (Exception e)
+            catch 
             {
                 return false;
             }
@@ -53,7 +53,7 @@ namespace AracKiralama.SoapServis
                 aracManager.Delete(id);
                 return true;
             }
-            catch (Exception e)
+            catch 
             {
                 return false;
             }
@@ -93,7 +93,7 @@ namespace AracKiralama.SoapServis
                 aracManager.Update(arac);
                 return true;
             }
-            catch (Exception e)
+            catch 
             {
                 return false;
             }

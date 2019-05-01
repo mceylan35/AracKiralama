@@ -22,7 +22,7 @@
           <s:element minOccurs="1" maxOccurs="1" name="BagajHacmi" nillable="true" type="s:int" />
           <s:element minOccurs="1" maxOccurs="1" name="KoltukSayisi" nillable="true" type="s:int" />
           <s:element minOccurs="1" maxOccurs="1" name="GunlukKiralikFiyat" nillable="true" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="SirketID" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SirketId" nillable="true" type="s:int" />
           <s:element minOccurs="1" maxOccurs="1" name="Rezerve" nillable="true" type="s:boolean" />
           <s:element minOccurs="0" maxOccurs="1" name="Resim" type="s:string" />
         </s:sequence>

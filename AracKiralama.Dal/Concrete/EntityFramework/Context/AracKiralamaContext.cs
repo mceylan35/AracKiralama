@@ -8,17 +8,15 @@ namespace AracKiralama.Dal.Concrete.EntityFramework.Context
 
     public partial class AracKiralamaContext : DbContext
     {
-
         public AracKiralamaContext()
             : base("name=AracKiralamaContext")
         {
-            this.Configuration.LazyLoadingEnabled = false;
         }
 
         public virtual DbSet<Arac> Arac { get; set; }
         public virtual DbSet<Kiralik> Kiralik { get; set; }
         public virtual DbSet<Kullanici> Kullanici { get; set; }
-        public virtual DbSet<Rezervasyon> Rezervasyon { get; set; }
+        public virtual DbSet<Musteri> Musteri { get; set; }
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<Sirket> Sirket { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
@@ -32,11 +30,6 @@ namespace AracKiralama.Dal.Concrete.EntityFramework.Context
             modelBuilder.Entity<Kiralik>()
                 .Property(e => e.AlinanUcret)
                 .HasPrecision(19, 4);
-
-            modelBuilder.Entity<Kullanici>()
-                .HasMany(e => e.Rezervasyon)
-                .WithOptional(e => e.Kullanici)
-                .HasForeignKey(e => e.AracId);
         }
 
     }

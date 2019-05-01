@@ -45,10 +45,16 @@
     <Compile Include="DTO\AracDTO.cs" />
     <Compile Include="DTO\KiralikDTO.cs" />
     <Compile Include="DTO\KullaniciDTO.cs" />
-    <Compile Include="DTO\RezervasyonDTO.cs" />
+    <Compile Include="DTO\MusteriDTO.cs" />
     <Compile Include="DTO\RoleDTO.cs" />
     <Compile Include="DTO\SirketDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AracKiralama.Entities\AracKiralama.Entities.csproj">
+      <Project>{93ACBC5E-D32C-44C1-8237-4AFA7A5ECCEC}</Project>
+      <Name>AracKiralama.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

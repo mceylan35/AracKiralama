@@ -13,7 +13,6 @@ namespace AracKiralama.Entities
         public Arac()
         {
             Kiralik = new HashSet<Kiralik>();
-            Rezervasyon = new HashSet<Rezervasyon>();
         }
 
         public int AracId { get; set; }
@@ -39,7 +38,7 @@ namespace AracKiralama.Entities
         [Column(TypeName = "money")]
         public decimal? GunlukKiralikFiyat { get; set; }
 
-        public int? SirketID { get; set; }
+        public int? SirketId { get; set; }
 
         public bool? Rezerve { get; set; }
 
@@ -49,8 +48,5 @@ namespace AracKiralama.Entities
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Kiralik> Kiralik { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Rezervasyon> Rezervasyon { get; set; }
     }
 }

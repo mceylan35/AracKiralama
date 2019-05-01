@@ -28,6 +28,8 @@ namespace AracKiralama.DTO.DTO
         [Column(TypeName = "date")]
         public DateTime? DogumTarihi { get; set; }
 
-        public int? RoleID { get; set; }
+        public int? RoleId { get; set; }
+
+        public int? SirketId { get; set; }
     }
 }

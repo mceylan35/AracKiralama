@@ -29,7 +29,7 @@ namespace AracKiralama.SoapServis
         public void Add(KiralikDTO entity)
         {
             int gunsayisi = GunSayisiHesapla((DateTime)entity.Alis_Tarihi, (DateTime)entity.Veris_Tarihi);
-            var arac = aracManager.Get((int)entity.AracID);
+            var arac = aracManager.Get((int)entity.AracId);
             decimal fiyat = KiraFiyatHesapla(gunsayisi, (decimal)arac.GunlukKiralikFiyat);
             entity.AlinanUcret = fiyat;
             var kiralik = Mapper.Map<Kiralik>(entity);

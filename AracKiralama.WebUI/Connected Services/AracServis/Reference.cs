@@ -46,7 +46,7 @@ namespace AracKiralama.WebUI.AracServis {
         
         private System.Nullable<decimal> GunlukKiralikFiyatField;
         
-        private System.Nullable<int> SirketIDField;
+        private System.Nullable<int> SirketIdField;
         
         private System.Nullable<bool> RezerveField;
         
@@ -207,14 +207,14 @@ namespace AracKiralama.WebUI.AracServis {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=11)]
-        public System.Nullable<int> SirketID {
+        public System.Nullable<int> SirketId {
             get {
-                return this.SirketIDField;
+                return this.SirketIdField;
             }
             set {
-                if ((this.SirketIDField.Equals(value) != true)) {
-                    this.SirketIDField = value;
-                    this.RaisePropertyChanged("SirketID");
+                if ((this.SirketIdField.Equals(value) != true)) {
+                    this.SirketIdField = value;
+                    this.RaisePropertyChanged("SirketId");
                 }
             }
         }
