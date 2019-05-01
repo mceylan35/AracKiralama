@@ -59,7 +59,18 @@ namespace AracKiralama.Web.UI.Controllers
         {
             if (ModelState.IsValid)
             {
-                kiralikService.Add(Mapper.Map<KiralikDTO>(kiralik));
+                kiralikService.Add(new KiralikDTO
+                {
+                    AlinanUcret = kiralik.AlinanUcret,
+                    AracId = kiralik.AracId,
+                    Alis_Tarihi = kiralik.Alis_Tarihi,
+                    Veris_Tarihi = kiralik.Veris_Tarihi,
+                    Durum = kiralik.Durum,
+                    Iade = kiralik.Iade,
+                    MusteriId = kiralik.MusteriId,
+                    VerilisKm = kiralik.VerilisKm
+                    
+                });
                 return RedirectToAction("Index");
             }
 
