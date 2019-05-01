@@ -17,6 +17,7 @@ namespace AracKiralama.Web.UI.Controllers
     public class AracsController : Controller
     {
         private AracKiralamaContext db = new AracKiralamaContext();
+
         AracServisSoapClient aracServis = new AracServisSoapClient();
         // GET: Aracs
         public ActionResult Index()

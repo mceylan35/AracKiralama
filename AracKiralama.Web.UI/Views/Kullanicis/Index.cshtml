@@ -1,0 +1,57 @@
+﻿@model List<AracKiralama.Web.UI.Models.KullaniciModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Ad
+        </th>
+        <th>
+            Soyad
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Ehliyet Alış Tarihi
+        </th>
+        <th>
+            Doğum Tarihi
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Soyad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EhliyetAlimTarihi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DogumTarihi)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.KullaniciId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.KullaniciId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.KullaniciId })
+        </td>
+    </tr>
+}
+
+</table>
