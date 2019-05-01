@@ -15,7 +15,7 @@ namespace AracKiralama.DTO.DTO
 
         public string Adres { get; set; }
 
-        public string AracSayisi { get; set; }
+        public int AracSayisi { get; set; }
 
         public int? SirketPuani { get; set; }
     }

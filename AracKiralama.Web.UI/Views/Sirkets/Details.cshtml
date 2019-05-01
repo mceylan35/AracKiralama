@@ -1,0 +1,58 @@
+﻿@model AracKiralama.Web.UI.Models.SirketModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sirket</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SirketAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SirketAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sehir)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sehir)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracSayisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracSayisi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SirketPuani)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SirketPuani)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SirketId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

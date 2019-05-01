@@ -30,7 +30,7 @@ namespace AracKiralama.DTO.DTO
 
         public int? KoltukSayisi { get; set; }
 
-        [Column(TypeName = "money")]
+     //   [Column(TypeName = "money")]
         public decimal? GunlukKiralikFiyat { get; set; }
 
         public int? SirketId { get; set; }

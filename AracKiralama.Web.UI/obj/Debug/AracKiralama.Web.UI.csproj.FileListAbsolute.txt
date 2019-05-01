@@ -76,3 +76,15 @@ C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\obj\Debug\AracKira
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\obj\Debug\AracKiralama.Web.UI.csproj.CopyComplete
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\obj\Debug\AracKiralama.Web.UI.dll
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\obj\Debug\AracKiralama.Web.UI.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\bin\AracKiralama.Bll.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\bin\AracKiralama.Dal.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\bin\EntityFramework.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\bin\EntityFramework.SqlServer.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\bin\AracKiralama.Interfaces.dll
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\bin\AracKiralama.Bll.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\bin\AracKiralama.Dal.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\bin\AracKiralama.Dal.dll.config
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\bin\EntityFramework.xml
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\bin\EntityFramework.SqlServer.xml
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\bin\AracKiralama.Interfaces.pdb
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Web.UI\obj\Debug\AracKiralama.Web.UI.csprojAssemblyReference.cache
