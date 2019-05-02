@@ -166,6 +166,27 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Connected Services\MusteriServis\AracKiralama.Web.UI.MusteriServis.AddResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MusteriServis\AracKiralama.Web.UI.MusteriServis.GetAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MusteriServis\AracKiralama.Web.UI.MusteriServis.GetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MusteriServis\AracKiralama.Web.UI.MusteriServis.MusteriDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MusteriServis\AracKiralama.Web.UI.MusteriServis.UpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\MusteriServis\configuration91.svcinfo" />
+    <None Include="Connected Services\MusteriServis\configuration.svcinfo" />
+    <None Include="Connected Services\MusteriServis\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Connected Services\SirketServis\AracKiralama.Web.UI.SirketServis.AddResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -179,6 +200,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\KullaniciServis\KullaniciServis.wsdl" />
+    <None Include="Connected Services\MusteriServis\MusteriServis.wsdl" />
     <None Include="Connected Services\SirketServis\configuration91.svcinfo" />
     <None Include="Connected Services\SirketServis\configuration.svcinfo" />
     <None Include="Connected Services\SirketServis\Reference.svcmap">
@@ -248,6 +270,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\MusteriServis\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\SirketServis\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -288,6 +315,7 @@
     <WCFMetadataStorage Include="Connected Services\AracServis\" />
     <WCFMetadataStorage Include="Connected Services\KiralikServis\" />
     <WCFMetadataStorage Include="Connected Services\KullaniciServis\" />
+    <WCFMetadataStorage Include="Connected Services\MusteriServis\" />
     <WCFMetadataStorage Include="Connected Services\SirketServis\" />
   </ItemGroup>
   <ItemGroup>
