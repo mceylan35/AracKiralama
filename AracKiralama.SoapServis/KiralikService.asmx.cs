@@ -21,7 +21,7 @@ namespace AracKiralama.SoapServis
     // [System.Web.Script.Services.ScriptService]
     public class KiralikService : System.Web.Services.WebService
     {
-
+        
         private KiralikManager kiralikManager = new KiralikManager(new EfKiralikRepository());
         private AracManager aracManager = new AracManager(new EfAracRepository());
 

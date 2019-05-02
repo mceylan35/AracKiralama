@@ -55,6 +55,7 @@
     <Compile Include="IKiralikService.cs" />
     <Compile Include="IKullaniciService.cs" />
     <Compile Include="IMusteriService.cs" />
+    <Compile Include="IRoleService.cs" />
     <Compile Include="ISirketService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
