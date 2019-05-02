@@ -13,3 +13,13 @@ C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.DTO\bin\Debug\AracKiralam
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.DTO\bin\Debug\AracKiralama.Entities.pdb
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.DTO\bin\Debug\AracKiralama.Entities.dll.config
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.DTO\obj\Debug\AracKiralama.DTO.csproj.CopyComplete
+C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.DTO\bin\Debug\AracKiralama.DTO.dll
+C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.DTO\bin\Debug\AracKiralama.DTO.pdb
+C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.DTO\bin\Debug\AracKiralama.Entities.dll
+C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.DTO\bin\Debug\AracKiralama.Entities.pdb
+C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.DTO\bin\Debug\AracKiralama.Entities.dll.config
+C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.DTO\obj\Debug\AracKiralama.DTO.csprojAssemblyReference.cache
+C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.DTO\obj\Debug\AracKiralama.DTO.csproj.CoreCompileInputs.cache
+C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.DTO\obj\Debug\AracKiralama.DTO.csproj.CopyComplete
+C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.DTO\obj\Debug\AracKiralama.DTO.dll
+C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.DTO\obj\Debug\AracKiralama.DTO.pdb
