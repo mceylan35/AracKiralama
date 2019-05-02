@@ -4,59 +4,87 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<section id="page-title-area" class="section-padding overlay">
+    <div class="container">
+        <div class="row">
+            <!-- Page Title Start -->
+            <div class="col-lg-12">
+                <div class="section-title  text-center">
+                    <h2>Our Cars</h2>
+                    <span class="title-line"><i class="fa fa-car"></i></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <!-- Page Title End -->
+        </div>
+    </div>
+</section>
+<!--== Page Title Area End ==-->
+<!--== Car List Area Start ==-->
+<section id="car-list-area" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <!-- Car List Content Start -->
+            <div class="col-lg-12">
+                <div class="car-list-content">
+                    <div class="row">
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-   
+                        @foreach (var item in Model)
+                        {
+                        <div class="col-lg-4 col-md-4">
 
-@foreach (var item in Model) {
-    <tr>
-      
-        <td>
-            @Html.DisplayFor(modelItem => item.AracAdi)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Model)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EhliyetYasi)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MinYasSiniri)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.GunlukSinirKM)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.KendiAnlikKM)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AirBag)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BagajHacmi)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.KoltukSayisi)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.GunlukKiralikFiyat)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Rezerve)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Resim)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.AracId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.AracId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.AracId })
-        </td>
-    </tr>
-}
+                            <div class="single-car-wrap">
 
-</table>
+                                <div class="car-list-thumb" >
+                                    <img src="@Html.DisplayFor(modelItem => item.Resim)" alt="Alternate Text" />
+                                </div>
+                                <div class="car-list-info without-bar">
+                                    <h2><a href="#">@Html.DisplayFor(modelItem => item.AracAdi) - @Html.DisplayFor(modelItem => item.Model)</a></h2>
+                                    <h5>@Html.DisplayFor(modelItem => item.GunlukKiralikFiyat) ₺ /günlük    </h5>
+                                    <p>
+                                        - Ehliyet Yaşı :   @Html.DisplayFor(modelItem => item.EhliyetYasi)
+                                        - Minumum Yaş Sınırı @Html.DisplayFor(modelItem => item.MinYasSiniri) <br />
+                                        - Günlük Sınır : @Html.DisplayFor(modelItem => item.GunlukSinirKM).ToString() KM <br />
+                                        - Şuan KM : @Html.DisplayFor(modelItem => item.KendiAnlikKM)
+                                        - Koltuk Sayısı : @Html.DisplayFor(modelItem => item.KoltukSayisi) <br />
+                                        - Bagaj Hacmi : @Html.DisplayFor(modelItem => item.BagajHacmi) LT
+                                    </p>
+                                    <ul class="car-info-list">
+                                        <li> Airbag</li>
+                                        <li > Sigortalı</li>
+                                        <li style="border-color:green;color:forestgreen;"> Uygun</li>
+
+                                    </ul>
+                                    <p class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star unmark"></i>
+                                    </p> 
+                                    <p style="text-align:center"> <a href="#"  class="rent-btn">kirala!</a></p>
+                                            
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                     
+
+                            }
+
+                        </div>
+                </div>
+
+                <!-- Page Pagination Start -->
+                <div class="page-pagi">
+                    Count : 
+                </div>
+                <!-- Page Pagination End -->
+            </div>
+            <!-- Car List Content End -->
+        </div>
+    </div>
+</section>
+<!--== Car List Area End ==-->

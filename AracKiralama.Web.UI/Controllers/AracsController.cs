@@ -58,11 +58,22 @@ namespace AracKiralama.Web.UI.Controllers
             if (ModelState.IsValid)
             {
                 arac.SirketId = 1;
-                aracServis.Add(Mapper.Map<AracDTO>(arac));
+                aracServis.Add(new AracDTO
+                {
+                    AracAdi = arac.AracAdi,
+                    AracId = arac.AracId,
+                    BagajHacmi = arac.BagajHacmi,
+                    AirBag = arac.AirBag,
+                    EhliyetYasi = arac.EhliyetYasi,
+                    KendiAnlikKM = arac.KendiAnlikKM,
+                    GunlukKiralikFiyat = arac.GunlukKiralikFiyat,
+                    KoltukSayisi = arac.KoltukSayisi,
+                    MinYasSiniri = arac.MinYasSiniri,
+                    GunlukSinirKM = arac.GunlukSinirKM,
+                    Model = arac.Model           
+                });
                 return RedirectToAction("Index");
-            }
-
-           
+            }        
             return View(arac);
         }
 
@@ -105,8 +116,10 @@ namespace AracKiralama.Web.UI.Controllers
                     KoltukSayisi = arac.KoltukSayisi,
                     MinYasSiniri = arac.MinYasSiniri,
                     GunlukSinirKM = arac.GunlukSinirKM,
-                   Model = arac.Model
-                    
+                    Rezerve = arac.Rezerve,
+                    Resim = arac.Resim,
+                    SirketId = arac.SirketId,                  
+                   Model = arac.Model                    
                 });
                 return RedirectToAction("Index");
             }
@@ -133,8 +146,7 @@ namespace AracKiralama.Web.UI.Controllers
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
-        {
-        
+        {        
             try
             {
            //     var arac = Mapper.Map<AracModel>(aracServis.Get((int)id));
@@ -145,12 +157,8 @@ namespace AracKiralama.Web.UI.Controllers
             }
             catch (Exception e)
             {
-
-            
                 return View();
-            }
-
-            
+            }            
         }
 
         protected override void Dispose(bool disposing)
