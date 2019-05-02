@@ -12,16 +12,17 @@ using AracKiralama.Web.UI.AracServis;
 using AracKiralama.Web.UI.KiralikServis;
 using AracKiralama.Web.UI.Models;
 using AracKiralama.Web.UI.MusteriServis;
+//using AracKiralama.Web.UI.MusteriServis;
 using AutoMapper;
 
 namespace AracKiralama.Web.UI.Controllers
 {
     public class KiraliksController : Controller
     {
-        private AracKiralamaContext db = new AracKiralamaContext();
+        //private AracKiralamaContext db = new AracKiralamaContext();
         KiralikServiceSoapClient kiralikService=new KiralikServiceSoapClient();
         AracServisSoapClient aracServis=new AracServisSoapClient();
-        RezervasyonServisSoapClient degistir=new RezervasyonServisSoapClient();
+      MusteriServisSoapClient musteriServis=new MusteriServisSoapClient();
         
         // GET: Kiraliks
         public ActionResult Index()
@@ -50,7 +51,7 @@ namespace AracKiralama.Web.UI.Controllers
         public ActionResult Create()
         {
             ViewBag.AracId = new SelectList(aracServis.GetAll(), "AracId", "AracAdi");
-           ViewBag.MusteriId = new SelectList(degistir.GetAll(), "MusteriId", "Adi");
+          ViewBag.MusteriId = new SelectList(musteriServis.GetAll(), "MusteriId", "Adi");
             return View();
         }
 
@@ -59,13 +60,13 @@ namespace AracKiralama.Web.UI.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "KiralikId,AracId,Alis_Tarihi,Veris_Tarihi,VerilisKm,AlinanUcret,Iade,Durum,MusteriId")] KiralikModel kiralik)
+        public ActionResult Create(KiralikModel kiralik)
         {
             if (ModelState.IsValid)
             {
                 kiralikService.Add(new KiralikDTO
                 {
-                   // AlinanUcret = kiralik.AlinanUcret,
+                    AlinanUcret = kiralik.AlinanUcret,
                     AracId = kiralik.AracId,
                     Alis_Tarihi = kiralik.Alis_Tarihi,
                     Veris_Tarihi = kiralik.Veris_Tarihi,
@@ -78,7 +79,7 @@ namespace AracKiralama.Web.UI.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.AracId = new SelectList(aracServis.GetAll(), "AracId", "AracAdi", kiralik.AracId);
-            ViewBag.MusteriId = new SelectList(degistir.GetAll(), "MusteriId", "Adi", kiralik.MusteriId);
+            ViewBag.MusteriId = new SelectList(musteriServis.GetAll(), "MusteriId", "Adi", kiralik.MusteriId);
             
             return View(kiralik);
         }
@@ -95,8 +96,8 @@ namespace AracKiralama.Web.UI.Controllers
             {
                 return HttpNotFound();
             }
-           // ViewBag.AracId = new SelectList(db.Arac, "AracId", "AracAdi", kiralik.AracId);
-         //   ViewBag.MusteriId = new SelectList(db.Musteri, "MusteriId", "Adi", kiralik.MusteriId);
+            ViewBag.AracId = new SelectList(aracServis.GetAll(), "AracId", "AracAdi", kiralik.AracId);
+            ViewBag.MusteriId = new SelectList(musteriServis.GetAll(), "MusteriId", "Adi", kiralik.MusteriId);
             return View(kiralik);
         }
 
@@ -105,7 +106,7 @@ namespace AracKiralama.Web.UI.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "KiralikId,AracId,Alis_Tarihi,Veris_Tarihi,VerilisKm,AlinanUcret,Iade,Durum,MusteriId")] KiralikModel kiralik)
+        public ActionResult Edit(KiralikModel kiralik)
         {
             if (ModelState.IsValid)
             {
@@ -118,14 +119,14 @@ namespace AracKiralama.Web.UI.Controllers
                    Veris_Tarihi = kiralik.Veris_Tarihi,
                    Durum = kiralik.Durum,
                    Iade = kiralik.Iade,
-                   MusteriId = kiralik.MusteriId,
+                   MusteriId = 1,
                    VerilisKm = kiralik.VerilisKm
 
                });
                 return RedirectToAction("Index");
             }
-          //  ViewBag.AracId = new SelectList(db.Arac, "AracId", "AracAdi", kiralik.AracId);
-          //  ViewBag.MusteriId = new SelectList(db.Musteri, "MusteriId", "Adi", kiralik.MusteriId);
+            ViewBag.AracId = new SelectList(aracServis.GetAll(), "AracId", "AracAdi", kiralik.AracId);
+            ViewBag.MusteriId = new SelectList(musteriServis.GetAll(), "MusteriId", "Adi", kiralik.MusteriId);
             return View(kiralik);
         }
 
@@ -136,7 +137,7 @@ namespace AracKiralama.Web.UI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Kiralik kiralik = db.Kiralik.Find(id);
+            var kiralik = Mapper.Map<KiralikModel>(kiralikService.Get((int)id));
             if (kiralik == null)
             {
                 return HttpNotFound();
@@ -153,13 +154,13 @@ namespace AracKiralama.Web.UI.Controllers
             return RedirectToAction("Index");
         }
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+        //protected override void Dispose(bool disposing)
+        //{
+        //    if (disposing)
+        //    {
+        //        db.Dispose();
+        //    }
+        //    base.Dispose(disposing);
+        //}
     }
 }

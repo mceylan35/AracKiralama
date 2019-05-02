@@ -121,11 +121,11 @@
       <DependentUpon>KullaniciServis.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MusteriServis.asmx.cs">
       <DependentUpon>MusteriServis.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SirketServis.asmx.cs">
       <DependentUpon>SirketServis.asmx</DependentUpon>
       <SubType>Component</SubType>

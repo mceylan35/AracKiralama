@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="73c56337-67a0-48dd-b95e-7b81421312a3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c931b587-cdac-4303-b042-a623e9c9f1e9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,7 +22,7 @@
     <MetadataSource Address="http://localhost:54501/MusteriServis.asmx?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="MusteriServis.wsdl" MetadataType="Wsdl" ID="78cd0133-2957-4485-9f93-f874dd2ec5ed" SourceId="1" SourceUrl="http://localhost:54501/MusteriServis.asmx?wsdl" />
+    <MetadataFile FileName="MusteriServis.wsdl" MetadataType="Wsdl" ID="a64274a7-5b38-4f7d-8cc9-503f8285e345" SourceId="1" SourceUrl="http://localhost:54501/MusteriServis.asmx?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

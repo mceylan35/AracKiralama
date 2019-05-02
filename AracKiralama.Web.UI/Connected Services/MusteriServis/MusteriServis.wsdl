@@ -108,7 +108,7 @@
   <wsdl:message name="UpdateSoapOut">
     <wsdl:part name="parameters" element="tns:UpdateResponse" />
   </wsdl:message>
-  <wsdl:portType name="RezervasyonServisSoap">
+  <wsdl:portType name="MusteriServisSoap">
     <wsdl:operation name="Add">
       <wsdl:input message="tns:AddSoapIn" />
       <wsdl:output message="tns:AddSoapOut" />
@@ -130,7 +130,7 @@
       <wsdl:output message="tns:UpdateSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="RezervasyonServisSoap" type="tns:RezervasyonServisSoap">
+  <wsdl:binding name="MusteriServisSoap" type="tns:MusteriServisSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="Add">
       <soap:operation soapAction="http://tempuri.org/Add" style="document" />
@@ -178,7 +178,7 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:binding name="RezervasyonServisSoap12" type="tns:RezervasyonServisSoap">
+  <wsdl:binding name="MusteriServisSoap12" type="tns:MusteriServisSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="Add">
       <soap12:operation soapAction="http://tempuri.org/Add" style="document" />
@@ -226,11 +226,11 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:service name="RezervasyonServis">
-    <wsdl:port name="RezervasyonServisSoap" binding="tns:RezervasyonServisSoap">
+  <wsdl:service name="MusteriServis">
+    <wsdl:port name="MusteriServisSoap" binding="tns:MusteriServisSoap">
       <soap:address location="http://localhost:54501/MusteriServis.asmx" />
     </wsdl:port>
-    <wsdl:port name="RezervasyonServisSoap12" binding="tns:RezervasyonServisSoap12">
+    <wsdl:port name="MusteriServisSoap12" binding="tns:MusteriServisSoap12">
       <soap12:address location="http://localhost:54501/MusteriServis.asmx" />
     </wsdl:port>
   </wsdl:service>

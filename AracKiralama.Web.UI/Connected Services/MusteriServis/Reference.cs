@@ -152,8 +152,8 @@ namespace AracKiralama.Web.UI.MusteriServis {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="MusteriServis.RezervasyonServisSoap")]
-    public interface RezervasyonServisSoap {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="MusteriServis.MusteriServisSoap")]
+    public interface MusteriServisSoap {
         
         // CODEGEN: Generating message contract since element name entity from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Add", ReplyAction="*")]
@@ -442,34 +442,34 @@ namespace AracKiralama.Web.UI.MusteriServis {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface RezervasyonServisSoapChannel : AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap, System.ServiceModel.IClientChannel {
+    public interface MusteriServisSoapChannel : AracKiralama.Web.UI.MusteriServis.MusteriServisSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class RezervasyonServisSoapClient : System.ServiceModel.ClientBase<AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap>, AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap {
+    public partial class MusteriServisSoapClient : System.ServiceModel.ClientBase<AracKiralama.Web.UI.MusteriServis.MusteriServisSoap>, AracKiralama.Web.UI.MusteriServis.MusteriServisSoap {
         
-        public RezervasyonServisSoapClient() {
+        public MusteriServisSoapClient() {
         }
         
-        public RezervasyonServisSoapClient(string endpointConfigurationName) : 
+        public MusteriServisSoapClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public RezervasyonServisSoapClient(string endpointConfigurationName, string remoteAddress) : 
+        public MusteriServisSoapClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public RezervasyonServisSoapClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public MusteriServisSoapClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public RezervasyonServisSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public MusteriServisSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        AracKiralama.Web.UI.MusteriServis.AddResponse AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap.Add(AracKiralama.Web.UI.MusteriServis.AddRequest request) {
+        AracKiralama.Web.UI.MusteriServis.AddResponse AracKiralama.Web.UI.MusteriServis.MusteriServisSoap.Add(AracKiralama.Web.UI.MusteriServis.AddRequest request) {
             return base.Channel.Add(request);
         }
         
@@ -477,11 +477,11 @@ namespace AracKiralama.Web.UI.MusteriServis {
             AracKiralama.Web.UI.MusteriServis.AddRequest inValue = new AracKiralama.Web.UI.MusteriServis.AddRequest();
             inValue.Body = new AracKiralama.Web.UI.MusteriServis.AddRequestBody();
             inValue.Body.entity = entity;
-            AracKiralama.Web.UI.MusteriServis.AddResponse retVal = ((AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap)(this)).Add(inValue);
+            AracKiralama.Web.UI.MusteriServis.AddResponse retVal = ((AracKiralama.Web.UI.MusteriServis.MusteriServisSoap)(this)).Add(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<AracKiralama.Web.UI.MusteriServis.AddResponse> AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap.AddAsync(AracKiralama.Web.UI.MusteriServis.AddRequest request) {
+        System.Threading.Tasks.Task<AracKiralama.Web.UI.MusteriServis.AddResponse> AracKiralama.Web.UI.MusteriServis.MusteriServisSoap.AddAsync(AracKiralama.Web.UI.MusteriServis.AddRequest request) {
             return base.Channel.AddAsync(request);
         }
         
@@ -489,7 +489,7 @@ namespace AracKiralama.Web.UI.MusteriServis {
             AracKiralama.Web.UI.MusteriServis.AddRequest inValue = new AracKiralama.Web.UI.MusteriServis.AddRequest();
             inValue.Body = new AracKiralama.Web.UI.MusteriServis.AddRequestBody();
             inValue.Body.entity = entity;
-            return ((AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap)(this)).AddAsync(inValue);
+            return ((AracKiralama.Web.UI.MusteriServis.MusteriServisSoap)(this)).AddAsync(inValue);
         }
         
         public bool Delete(int id) {
@@ -501,7 +501,7 @@ namespace AracKiralama.Web.UI.MusteriServis {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        AracKiralama.Web.UI.MusteriServis.GetResponse AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap.Get(AracKiralama.Web.UI.MusteriServis.GetRequest request) {
+        AracKiralama.Web.UI.MusteriServis.GetResponse AracKiralama.Web.UI.MusteriServis.MusteriServisSoap.Get(AracKiralama.Web.UI.MusteriServis.GetRequest request) {
             return base.Channel.Get(request);
         }
         
@@ -509,12 +509,12 @@ namespace AracKiralama.Web.UI.MusteriServis {
             AracKiralama.Web.UI.MusteriServis.GetRequest inValue = new AracKiralama.Web.UI.MusteriServis.GetRequest();
             inValue.Body = new AracKiralama.Web.UI.MusteriServis.GetRequestBody();
             inValue.Body.id = id;
-            AracKiralama.Web.UI.MusteriServis.GetResponse retVal = ((AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap)(this)).Get(inValue);
+            AracKiralama.Web.UI.MusteriServis.GetResponse retVal = ((AracKiralama.Web.UI.MusteriServis.MusteriServisSoap)(this)).Get(inValue);
             return retVal.Body.GetResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<AracKiralama.Web.UI.MusteriServis.GetResponse> AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap.GetAsync(AracKiralama.Web.UI.MusteriServis.GetRequest request) {
+        System.Threading.Tasks.Task<AracKiralama.Web.UI.MusteriServis.GetResponse> AracKiralama.Web.UI.MusteriServis.MusteriServisSoap.GetAsync(AracKiralama.Web.UI.MusteriServis.GetRequest request) {
             return base.Channel.GetAsync(request);
         }
         
@@ -522,34 +522,34 @@ namespace AracKiralama.Web.UI.MusteriServis {
             AracKiralama.Web.UI.MusteriServis.GetRequest inValue = new AracKiralama.Web.UI.MusteriServis.GetRequest();
             inValue.Body = new AracKiralama.Web.UI.MusteriServis.GetRequestBody();
             inValue.Body.id = id;
-            return ((AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap)(this)).GetAsync(inValue);
+            return ((AracKiralama.Web.UI.MusteriServis.MusteriServisSoap)(this)).GetAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        AracKiralama.Web.UI.MusteriServis.GetAllResponse AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap.GetAll(AracKiralama.Web.UI.MusteriServis.GetAllRequest request) {
+        AracKiralama.Web.UI.MusteriServis.GetAllResponse AracKiralama.Web.UI.MusteriServis.MusteriServisSoap.GetAll(AracKiralama.Web.UI.MusteriServis.GetAllRequest request) {
             return base.Channel.GetAll(request);
         }
         
         public AracKiralama.Web.UI.MusteriServis.MusteriDTO[] GetAll() {
             AracKiralama.Web.UI.MusteriServis.GetAllRequest inValue = new AracKiralama.Web.UI.MusteriServis.GetAllRequest();
             inValue.Body = new AracKiralama.Web.UI.MusteriServis.GetAllRequestBody();
-            AracKiralama.Web.UI.MusteriServis.GetAllResponse retVal = ((AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap)(this)).GetAll(inValue);
+            AracKiralama.Web.UI.MusteriServis.GetAllResponse retVal = ((AracKiralama.Web.UI.MusteriServis.MusteriServisSoap)(this)).GetAll(inValue);
             return retVal.Body.GetAllResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<AracKiralama.Web.UI.MusteriServis.GetAllResponse> AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap.GetAllAsync(AracKiralama.Web.UI.MusteriServis.GetAllRequest request) {
+        System.Threading.Tasks.Task<AracKiralama.Web.UI.MusteriServis.GetAllResponse> AracKiralama.Web.UI.MusteriServis.MusteriServisSoap.GetAllAsync(AracKiralama.Web.UI.MusteriServis.GetAllRequest request) {
             return base.Channel.GetAllAsync(request);
         }
         
         public System.Threading.Tasks.Task<AracKiralama.Web.UI.MusteriServis.GetAllResponse> GetAllAsync() {
             AracKiralama.Web.UI.MusteriServis.GetAllRequest inValue = new AracKiralama.Web.UI.MusteriServis.GetAllRequest();
             inValue.Body = new AracKiralama.Web.UI.MusteriServis.GetAllRequestBody();
-            return ((AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap)(this)).GetAllAsync(inValue);
+            return ((AracKiralama.Web.UI.MusteriServis.MusteriServisSoap)(this)).GetAllAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        AracKiralama.Web.UI.MusteriServis.UpdateResponse AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap.Update(AracKiralama.Web.UI.MusteriServis.UpdateRequest request) {
+        AracKiralama.Web.UI.MusteriServis.UpdateResponse AracKiralama.Web.UI.MusteriServis.MusteriServisSoap.Update(AracKiralama.Web.UI.MusteriServis.UpdateRequest request) {
             return base.Channel.Update(request);
         }
         
@@ -557,11 +557,11 @@ namespace AracKiralama.Web.UI.MusteriServis {
             AracKiralama.Web.UI.MusteriServis.UpdateRequest inValue = new AracKiralama.Web.UI.MusteriServis.UpdateRequest();
             inValue.Body = new AracKiralama.Web.UI.MusteriServis.UpdateRequestBody();
             inValue.Body.entity = entity;
-            AracKiralama.Web.UI.MusteriServis.UpdateResponse retVal = ((AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap)(this)).Update(inValue);
+            AracKiralama.Web.UI.MusteriServis.UpdateResponse retVal = ((AracKiralama.Web.UI.MusteriServis.MusteriServisSoap)(this)).Update(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<AracKiralama.Web.UI.MusteriServis.UpdateResponse> AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap.UpdateAsync(AracKiralama.Web.UI.MusteriServis.UpdateRequest request) {
+        System.Threading.Tasks.Task<AracKiralama.Web.UI.MusteriServis.UpdateResponse> AracKiralama.Web.UI.MusteriServis.MusteriServisSoap.UpdateAsync(AracKiralama.Web.UI.MusteriServis.UpdateRequest request) {
             return base.Channel.UpdateAsync(request);
         }
         
@@ -569,7 +569,7 @@ namespace AracKiralama.Web.UI.MusteriServis {
             AracKiralama.Web.UI.MusteriServis.UpdateRequest inValue = new AracKiralama.Web.UI.MusteriServis.UpdateRequest();
             inValue.Body = new AracKiralama.Web.UI.MusteriServis.UpdateRequestBody();
             inValue.Body.entity = entity;
-            return ((AracKiralama.Web.UI.MusteriServis.RezervasyonServisSoap)(this)).UpdateAsync(inValue);
+            return ((AracKiralama.Web.UI.MusteriServis.MusteriServisSoap)(this)).UpdateAsync(inValue);
         }
     }
 }

@@ -59,7 +59,7 @@
     <Compile Include="Concrete\EntityFramework\Repository\EfGenericRepository.cs" />
     <Compile Include="Concrete\EntityFramework\Repository\EfKiralikRepository.cs" />
     <Compile Include="Concrete\EntityFramework\Repository\EfKullaniciRepository.cs" />
-    <Compile Include="Concrete\EntityFramework\Repository\EfRezervasyonRepository.cs" />
+    <Compile Include="Concrete\EntityFramework\Repository\EfMusteriRepository.cs" />
     <Compile Include="Concrete\EntityFramework\Repository\EfSirketRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
