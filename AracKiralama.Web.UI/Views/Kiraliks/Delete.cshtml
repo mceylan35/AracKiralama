@@ -1,0 +1,88 @@
+﻿@model AracKiralama.Web.UI.Models.KiralikModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Kiralik</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           Araç Adı
+        </dt>
+
+        <dd>
+         Araç Adı
+        </dd>
+
+        <dt>
+        Müşteri Adı
+        </dt>
+
+        <dd>
+            Müşteri Adı
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Alis_Tarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Alis_Tarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Veris_Tarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Veris_Tarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VerilisKm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VerilisKm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlinanUcret)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlinanUcret)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Iade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Iade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Durum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Durum)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

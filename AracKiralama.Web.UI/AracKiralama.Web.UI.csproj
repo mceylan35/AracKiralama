@@ -120,6 +120,27 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Connected Services\KiralikServis\AracKiralama.Web.UI.KiralikServis.AddResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\KiralikServis\AracKiralama.Web.UI.KiralikServis.GetAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\KiralikServis\AracKiralama.Web.UI.KiralikServis.GetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\KiralikServis\AracKiralama.Web.UI.KiralikServis.KiralikDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\KiralikServis\AracKiralama.Web.UI.KiralikServis.UpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\KiralikServis\configuration91.svcinfo" />
+    <None Include="Connected Services\KiralikServis\configuration.svcinfo" />
+    <None Include="Connected Services\KiralikServis\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Connected Services\KullaniciServis\AracKiralama.Web.UI.KullaniciServis.AddResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -138,9 +159,31 @@
     <Content Include="Connected Services\KullaniciServis\AracKiralama.Web.UI.KullaniciServis.UpdateResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Connected Services\KiralikServis\KiralikService.wsdl" />
     <None Include="Connected Services\KullaniciServis\configuration91.svcinfo" />
     <None Include="Connected Services\KullaniciServis\configuration.svcinfo" />
     <None Include="Connected Services\KullaniciServis\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\MusteriServis\AracKiralama.Web.UI.MusteriServis.AddResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MusteriServis\AracKiralama.Web.UI.MusteriServis.GetAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MusteriServis\AracKiralama.Web.UI.MusteriServis.GetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MusteriServis\AracKiralama.Web.UI.MusteriServis.MusteriDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MusteriServis\AracKiralama.Web.UI.MusteriServis.UpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\MusteriServis\configuration91.svcinfo" />
+    <None Include="Connected Services\MusteriServis\configuration.svcinfo" />
+    <None Include="Connected Services\MusteriServis\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -157,6 +200,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\KullaniciServis\KullaniciServis.wsdl" />
+    <None Include="Connected Services\MusteriServis\MusteriServis.wsdl" />
     <None Include="Connected Services\SirketServis\configuration91.svcinfo" />
     <None Include="Connected Services\SirketServis\configuration.svcinfo" />
     <None Include="Connected Services\SirketServis\Reference.svcmap">
@@ -171,6 +215,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Connected Services\SirketServis\SirketServis.wsdl" />
+    <Content Include="libman.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -203,6 +248,11 @@
     <Content Include="Views\Kullanicis\Details.cshtml" />
     <Content Include="Views\Kullanicis\Edit.cshtml" />
     <Content Include="Views\Kullanicis\Index.cshtml" />
+    <Content Include="Views\Kiraliks\Create.cshtml" />
+    <Content Include="Views\Kiraliks\Delete.cshtml" />
+    <Content Include="Views\Kiraliks\Details.cshtml" />
+    <Content Include="Views\Kiraliks\Edit.cshtml" />
+    <Content Include="Views\Kiraliks\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -211,7 +261,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\KiralikServis\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\KullaniciServis\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\MusteriServis\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -223,12 +283,14 @@
     </Compile>
     <Compile Include="Controllers\AracsController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\KiraliksController.cs" />
     <Compile Include="Controllers\KullanicisController.cs" />
     <Compile Include="Controllers\SirketsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AracModel.cs" />
+    <Compile Include="Models\KiralikModel.cs" />
     <Compile Include="Models\KullaniciModel.cs" />
     <Compile Include="Models\SirketModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -252,7 +314,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\AracServis\" />
+    <WCFMetadataStorage Include="Connected Services\KiralikServis\" />
     <WCFMetadataStorage Include="Connected Services\KullaniciServis\" />
+    <WCFMetadataStorage Include="Connected Services\MusteriServis\" />
     <WCFMetadataStorage Include="Connected Services\SirketServis\" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,76 @@
+﻿@model List<AracKiralama.Web.UI.Models.KiralikModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Arac.AracAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Musteri.Adi)
+            </th>*@
+        <th>
+            Alış Tarihi
+        </th>
+        <th>
+            Veriş Tarihi
+        </th>
+        <th>
+            Veriş Km
+        </th>
+        <th>
+            Alınan Ücret
+        </th>
+        <th>
+            İade
+        </th>
+        <th>
+            Durum
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Arac.AracAdi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Musteri.Adi)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Alis_Tarihi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Veris_Tarihi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VerilisKm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlinanUcret)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Iade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Durum)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.KiralikId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.KiralikId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.KiralikId })
+            </td>
+        </tr>
+    }
+
+</table>

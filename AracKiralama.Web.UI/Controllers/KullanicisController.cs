@@ -34,7 +34,7 @@ namespace AracKiralama.Web.UI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Kullanici kullanici = db.Kullanici.Find(id);
+            KullaniciModel kullanici =Mapper.Map<KullaniciModel>(kullaniciServis.Get((int)id));
             if (kullanici == null)
             {
                 return HttpNotFound();

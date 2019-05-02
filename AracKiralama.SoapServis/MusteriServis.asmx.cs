@@ -12,48 +12,47 @@ using AutoMapper;
 namespace AracKiralama.SoapServis
 {
     /// <summary>
-    /// Summary description for RezervasyonServis
+    /// Summary description for MusteriServis
     /// </summary>
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
     // [System.Web.Script.Services.ScriptService]
-    public class RezervasyonServis : System.Web.Services.WebService
+    public class MusteriServis : System.Web.Services.WebService
     {
-
-        MusteriManager rezervasyonManager = new MusteriManager(new EfMusteriRepository());
-        private AracManager aracManager = new AracManager(new EfAracRepository());
+        MusteriManager musteriManager = new MusteriManager(new EfMusteriRepository());
+        // private AracManager aracManager = new AracManager(new EfAracRepository());
         [WebMethod]
         public void Add(MusteriDTO entity)
         {
 
-         
+
         }
         [WebMethod]
         public bool Delete(int id)
         {
-            return rezervasyonManager.Delete(id);
+            return musteriManager.Delete(id);
         }
 
 
         [WebMethod]
         public MusteriDTO Get(int id)
         {
-            var entity = rezervasyonManager.Get(id);
+            var entity = musteriManager.Get(id);
             return Mapper.Map<MusteriDTO>(entity);
         }
         [WebMethod]
         public List<MusteriDTO> GetAll()
         {
-            var rezervasyonlar = rezervasyonManager.GetAll();
-            return Mapper.Map<List<MusteriDTO>>(rezervasyonlar).ToList();
+            var musteriler = musteriManager.GetAll();
+            return Mapper.Map<List<MusteriDTO>>(musteriler).ToList();
         }
         [WebMethod]
         public void Update(MusteriDTO entity)
         {
-            var rezervasyon = Mapper.Map<Musteri>(entity);
-            rezervasyonManager.Update(rezervasyon);
+            var musteri = Mapper.Map<Musteri>(entity);
+            musteriManager.Update(musteri);
         }
     }
 }
