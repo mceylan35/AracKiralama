@@ -13,22 +13,22 @@ using AutoMapper;
 
 namespace AracKiralama.WinFormUI
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-         // KullaniciServisSoapClient sp=new KullaniciServisSoapClient();
-            AracServisSoapClient aracServis=new AracServisSoapClient();
         
-            dataGridView1.DataSource = aracServis.GetAll();
 
-
-
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            mainPanel.Controls.Clear();
+            LoginForm loginForm = new LoginForm();
+            loginForm.TopLevel = false;
+            mainPanel.Controls.Add(loginForm);
+            loginForm.Show();
+            loginForm.Dock = DockStyle.Fill;
         }
     }
 }
