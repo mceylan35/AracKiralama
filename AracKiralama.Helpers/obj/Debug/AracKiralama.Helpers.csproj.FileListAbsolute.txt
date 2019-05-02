@@ -28,6 +28,23 @@ C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Helpers\obj\Debug\AracKir
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.csproj.CopyComplete
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.dll
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.pdb
+<<<<<<< HEAD
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Helpers\bin\Debug\AracKiralama.Helpers.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Helpers\bin\Debug\AracKiralama.Helpers.pdb
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Helpers\bin\Debug\AracKiralama.DTO.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Helpers\bin\Debug\AracKiralama.Entities.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Helpers\bin\Debug\AutoMapper.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Helpers\bin\Debug\AracKiralama.DTO.pdb
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Helpers\bin\Debug\AracKiralama.Entities.pdb
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Helpers\bin\Debug\AracKiralama.Entities.dll.config
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Helpers\bin\Debug\AutoMapper.pdb
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Helpers\bin\Debug\AutoMapper.xml
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.csprojAssemblyReference.cache
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.csproj.CopyComplete
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.pdb
+=======
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Helpers\bin\Debug\AracKiralama.Helpers.dll
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Helpers\bin\Debug\AracKiralama.Helpers.pdb
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Helpers\bin\Debug\AracKiralama.DTO.dll
@@ -43,3 +60,4 @@ C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Helpers\obj\Debug\AracKir
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.csproj.CopyComplete
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.dll
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Helpers\obj\Debug\AracKiralama.Helpers.pdb
+>>>>>>> d67e425d76e8c4f9a77f5fd2d97e8de41e0757bd

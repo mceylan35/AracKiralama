@@ -25,6 +25,23 @@ C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Entities\obj\Debug\AracK
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Entities\bin\Debug\AutoMapper.dll
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Entities\bin\Debug\AutoMapper.pdb
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.Entities\bin\Debug\AutoMapper.xml
+<<<<<<< HEAD
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Entities\bin\Debug\AracKiralama.Entities.dll.config
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Entities\bin\Debug\AracKiralama.Entities.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Entities\bin\Debug\AracKiralama.Entities.pdb
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Entities\bin\Debug\AutoMapper.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Entities\bin\Debug\EntityFramework.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Entities\bin\Debug\AutoMapper.pdb
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Entities\bin\Debug\AutoMapper.xml
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Entities\bin\Debug\EntityFramework.xml
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Entities\obj\Debug\AracKiralama.Entities.csprojAssemblyReference.cache
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Entities\obj\Debug\AracKiralama.Entities.csproj.CoreCompileInputs.cache
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Entities\obj\Debug\AracKiralama.Entities.csproj.CopyComplete
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Entities\obj\Debug\AracKiralama.Entities.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Entities\obj\Debug\AracKiralama.Entities.pdb
+=======
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Entities\bin\Debug\AracKiralama.Entities.dll.config
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Entities\bin\Debug\AracKiralama.Entities.dll
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Entities\bin\Debug\AracKiralama.Entities.pdb
@@ -40,3 +57,4 @@ C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Entities\obj\Debug\AracKi
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Entities\obj\Debug\AracKiralama.Entities.csproj.CopyComplete
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Entities\obj\Debug\AracKiralama.Entities.dll
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Entities\obj\Debug\AracKiralama.Entities.pdb
+>>>>>>> d67e425d76e8c4f9a77f5fd2d97e8de41e0757bd

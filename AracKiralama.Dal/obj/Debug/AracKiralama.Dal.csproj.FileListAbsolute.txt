@@ -32,6 +32,25 @@ C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Dal\obj\Debug\AracKirala
 C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.csproj.CopyComplete
 C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.dll
 C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.pdb
+<<<<<<< HEAD
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.Dal.dll.config
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.Dal.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.Dal.pdb
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.DTO.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.Entities.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\bin\Debug\EntityFramework.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.DTO.pdb
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.Entities.pdb
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.Entities.dll.config
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\bin\Debug\EntityFramework.xml
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.csprojAssemblyReference.cache
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.csproj.CoreCompileInputs.cache
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.csproj.CopyComplete
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.dll
+C:\Users\MONSTER\Desktop\SOAP\AracKiralama\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.pdb
+=======
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.Dal.dll.config
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.Dal.dll
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Dal\bin\Debug\AracKiralama.Dal.pdb
@@ -49,3 +68,4 @@ C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Dal\obj\Debug\AracKiralam
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.csproj.CopyComplete
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.dll
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.Dal\obj\Debug\AracKiralama.Dal.pdb
+>>>>>>> d67e425d76e8c4f9a77f5fd2d97e8de41e0757bd
