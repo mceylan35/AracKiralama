@@ -18,7 +18,30 @@ namespace AracKiralama.Bll
         {
             musteriRepository = _musteriRepository;
         }
-         
+      
 
+        public Musteri MusteriGiris(string eposta, string sifre)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(eposta.Trim()) || string.IsNullOrEmpty(sifre.Trim()))
+                {
+                    throw new Exception("Eposta ve şifre boş geçilemez");
+                }
+                var musteri = musteriRepository.MusteriGiris(eposta, sifre);
+                if (musteri == null)
+                {
+                    throw new Exception("Kullanıcı ve şifre uyuşmuyor.");
+                }
+                else
+                {
+                    return musteri;
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Kullanıcı Giriş hata" + e.Message);
+            }
+        }
     }
 }

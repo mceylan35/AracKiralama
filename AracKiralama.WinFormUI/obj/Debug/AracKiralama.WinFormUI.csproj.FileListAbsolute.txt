@@ -6,7 +6,6 @@ C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\obj\Debug\AracK
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.csproj.CoreCompileInputs.cache
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.exe
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.pdb
-C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.Form1.resources
 C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.csprojAssemblyReference.cache
 C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.WinFormUI\bin\Debug\AracKiralama.WinFormUI.exe.config
 C:\Users\Mehmet\source\repos\AracKiralama2\AracKiralama.WinFormUI\bin\Debug\AracKiralama.WinFormUI.exe
@@ -43,3 +42,7 @@ C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.WinFormUI\obj\Debug\AracK
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.pdb
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.FormCalisan.resources
 C:\Users\MyWorldSoftware\git\AracKiralama\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.FormYonetici.resources
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.FormCalisan.resources
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.FormYonetici.resources
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.LoginForm.resources
+C:\Users\Mehmet\source\repos\AracKiralama\AracKiralama.WinFormUI\obj\Debug\AracKiralama.WinFormUI.MainForm.resources

@@ -9,5 +9,6 @@ namespace AracKiralama.Interfaces
 {
     public interface IMusteriService:IGenericService<Musteri>
     {
+        Musteri MusteriGiris(string eposta, string sifre);
     }
 }

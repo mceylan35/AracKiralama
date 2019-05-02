@@ -19,14 +19,7 @@ namespace AracKiralama.Bll
            sirketRepository = _sirketRepository;
        }
      
-        ///deneme asdasda sad
-       
-        public short Test()
-        {
-            return 1;
-        }
-
-       //felaket
+    
 
        
     }

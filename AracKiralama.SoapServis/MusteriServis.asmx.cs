@@ -26,7 +26,8 @@ namespace AracKiralama.SoapServis
         [WebMethod]
         public void Add(MusteriDTO entity)
         {
-
+            var musteri = Mapper.Map<Musteri>(entity);
+            musteriManager.Add(musteri);
 
         }
         [WebMethod]

@@ -7,8 +7,7 @@ using AracKiralama.Entities;
 
 namespace AracKiralama.Dal.Abstract
 {
-    public interface IMusteriRepository : IGenericRepository<Musteri>
+    public interface IRoleRepository:IGenericRepository<Role>
     {
-        Musteri MusteriGiris(string eposta, string sifre);
     }
 }

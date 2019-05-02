@@ -15,5 +15,10 @@ namespace AracKiralama.Dal.Concrete.EntityFramework.Repository
         {
             context = new AracKiralamaContext();
         }
+
+        public Musteri MusteriGiris(string eposta, string sifre)
+        {
+            return context.Musteri.FirstOrDefault(x => x.Email == eposta && x.Sifre == sifre);
+        }
     }
 }
