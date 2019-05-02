@@ -55,5 +55,12 @@ namespace AracKiralama.SoapServis
             var musteri = Mapper.Map<Musteri>(entity);
             musteriManager.Update(musteri);
         }
+
+        [WebMethod]
+        public MusteriDTO MusteriGiris(string eposta, string sifre)
+        {
+            var entity = musteriManager.MusteriGiris(eposta, sifre);
+            return Mapper.Map<MusteriDTO>(entity);
+        }
     }
 }
